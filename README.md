@@ -1,2 +1,1 @@
-# AWS-Notes
-📝☁️ Notes on AWS cloud technologies.
+# Notes on AWS Services
