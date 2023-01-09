@@ -17,3 +17,27 @@
 
 The three main fields specified in a request are the principal, the action and the resource
 * Principal: User or role who requested permission
+* Action: Operation that the principal requests to make on the resource. The name of these actions is composed of the three letters’ name of a service and the name of the action beginning by a verb.
+
+"Action" : "ec2:StartInstances"
+"Action" : "iam:ChangePassword"
+
+* Resource: Target of the action.
+
+Almost anything that exists on AWS is a resource. E.g. an EC2 instance, a role, or the RDS service
+
+E.g. "Resource" : "arn:aws:iam::012345678912:user/Alice"
+
+The user Alice of the account 012345678912
+
+E.g. "Resource" : "arn:aws:sqs:eu-west-1:012345678912:queue1"
+
+The queue queue1 of the account 012345678912 in the region eu-west-1
+
+The formats of those identifiers are not exactly the same:
+* The region is specified for the SQS resource but not for the IAM resource. This is because the IAM service is trans-region and the SQS service is not.
+* The resource type is specified for the IAM resource but not for the SQS resource. There are a few types of resources in the IAM service (users, groups, roles, policies...) whereas there are only queues in SQS
+
+ARNs (Amazon Resource Names) are created to identify a resource in a unique way.
+
+
