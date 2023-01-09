@@ -1,4 +1,4 @@
-### AWS Identity and Access Management (IAM
+### AWS Identity and Access Management (IAM)
 * Deals with identity and authorization
 * Whenever you try to achieve any action on AWS, you have to go through IAM which will identify you and then allow or deny the action depending on the rights that have been granted to you by your account administrator
 * For example, when you connect to the AWS web console, it is IAM that checks your login and password and allow you to access your account
