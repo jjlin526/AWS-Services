@@ -11,3 +11,6 @@ API Gateway handles all the tasks involved in accepting and processing up to hun
 * A key benefit of an API gateway is the abstraction of the backend microservices
 * An API gateway acts as a proxy for an application’s microservices, exposing the public-facing API endpoints, routing incoming client requests to the relevant services, transforming them as required and aggregating the response data before sending the response to the client
 
+### How does API Gateway Work?  
+
+![image](https://user-images.githubusercontent.com/114364831/211415743-f7df43ae-5b19-416f-ad75-668888959fda.png)
