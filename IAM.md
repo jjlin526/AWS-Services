@@ -90,7 +90,8 @@ This example allows Amazon Directory Service to assign this role to its users. I
 * When a policy specifying a Resource is attached to a user, this user is the Principal of the action
 * On the contrary, if the policy specifies a Principal, it should be understood that the entity it is attached to is the Resource
 
-Diagram illustrating the use of strategies
+Diagram illustrating the use of strategies:  
+
 ![image](https://user-images.githubusercontent.com/114364831/211383877-d0171df2-1e2c-40b1-827a-6d019da4af12.png)
 
 For the diagram above:
@@ -98,4 +99,19 @@ For the diagram above:
 * Alice can make the rds:DescribeDBInstances on any resource. However, she tries to make another action (rds:StartDBInstance). Therefore her request is rejected.
 * Anne can make any RDS action on the resource identified by its ARN.
 * Mehdi can make any RDS action on any resource but one specific resource identified by its ARN. He still tries to act on this resource. His request is rejected.
+
+When both a policy allowing access and another denying it can be applied to the same resource, the access is denied.
+
+### Roles
+
+* A role is an AWS entity that can be compared to a user. However, a role is usually not associated with an individual or a precise application. 
+* Many users are usually given the right to assume a role (i.e. use temporarily the rights associated with a role)
+* A role, contrarily to a user does not have a password and uses temporary identification information.
+* Generic roles are already created on IAM and are directly available but it is possible to create new ones to deal with a precise need. Those generic roles are already associated with generic policies.
+
+A role could be used to allow users from a different account to act on resources on the role’s account.
+
+Diagram showing direct access to a resource from another account:  
+
+![image](https://user-images.githubusercontent.com/114364831/211385712-d0d22b74-90bd-43e4-9885-b6a835a90702.png)
 
