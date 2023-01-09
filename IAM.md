@@ -19,8 +19,8 @@ The three main fields specified in a request are the principal, the action and t
 * Principal: User or role who requested permission
 * Action: Operation that the principal requests to make on the resource. The name of these actions is composed of the three letters’ name of a service and the name of the action beginning by a verb.
 
-"Action" : "ec2:StartInstances"
-"Action" : "iam:ChangePassword"
+* "Action" : "ec2:StartInstances"
+* "Action" : "iam:ChangePassword"
 
 * Resource: Target of the action.
 
