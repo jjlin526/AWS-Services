@@ -100,7 +100,7 @@ For the diagram above:
 * Anne can make any RDS action on the resource identified by its ARN.
 * Mehdi can make any RDS action on any resource but one specific resource identified by its ARN. He still tries to act on this resource. His request is rejected.
 
-When both a policy allowing access and another denying it can be applied to the same resource, the access is denied.
+**When both a policy allowing access and another denying it can be applied to the same resource, the access is denied.**
 
 ### Roles
 
@@ -115,3 +115,14 @@ Diagram showing direct access to a resource from another account:
 
 ![image](https://user-images.githubusercontent.com/114364831/211385712-d0d22b74-90bd-43e4-9885-b6a835a90702.png)
 
+* Bob and Alice try to act directly on a resource hosted on an account different from theirs; their requests are rejected.
+* Anne can make any RDS action on any resource and is in the same account as the resource she tries to act upon.
+
+**It is necessary to assume a role to act on a resource on a different account.**
+
+Diagram showing access to a resource from another account through a role  
+
+![image](https://user-images.githubusercontent.com/114364831/211388796-ce18c1f4-b313-4b36-ac40-faf2c2647094.png)
+
+* Bob and Anne do not have a policy that allows them to male the action sts:AssumeRole. Their requests are rejected.
+* Alice can make the sts:AssumeRole on a specific role identified by its ARN. Her request is allowed and she can then use the role to make the action rds:StartDBInstance.
