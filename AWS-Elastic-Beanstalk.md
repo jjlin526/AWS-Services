@@ -1,4 +1,4 @@
-### Elastic Beanstalk
+### AWS Elastic Beanstalk
 
 * Application service that makes it easy to run code and scale it on AWS
 * Running on EC2 instances under the covers
