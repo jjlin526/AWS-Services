@@ -28,10 +28,23 @@ The diagram shows how to move data to Amazon S3, manage stored data in Amazon S3
 S3 buckets are accessed via URL
 * S3 Bucket Region - Bucket Name - Object Path
 
-When the permissions of objects are modified to allow anonymous access, S3 can be used to host static files for websites
+When the permissions of objects are modified to allow anonymous access, S3 can be used to host static files for websites  
+
 * Within the bucket configuration options, there is the ability to enable static website hosting for the given bucket (an S3 Hosted Website URL)
 * Still have object level permissions to give access to anonymous and authenticated users
 * Bucket itself will respond to requests and be enabled to interact with Route 53 URLs
 * Fast way to get a static website up with minimal costs
 
 ### How to Solve Latency in S3
+
+* S3 can automatically replicate files to other regions
+
+Step 1: Use CloudFront (can cache content -- edging content in locations around the world)
+
+### S3 Pricing Structure
+
+* Pricing based on 
+  * Amount of data stored
+  * Number of requests
+  * Amount of data transferred
+  * Region
