@@ -10,3 +10,22 @@ AWS Lambda is a **serverless compute service** that runs code in response to eve
 Use Amazon S3 to trigger AWS Lambda data processing in real time after an upload, or connect to an existing Amazon EFS file system to enable massively parallel shared access for large-scale file processing.  
 
 ![image](https://user-images.githubusercontent.com/114364831/211413637-fa80ecfd-5ffe-4818-b503-98f3b80481c6.png)
+
+* Lambda provides function code execution as a service or function as a service (i.e. serverless)
+
+### Lambda Features
+* Executes code with almost no configuration required
+* Can provide configuration for memory requirements
+* No server management required (runs on as many servers as required, scaling up and down as needed)
+* Only pay when your code is running (no pay for idling servers or load balancers)
+* Provides application or company with significant if there is infrequent activity
+
+### Lambda Structure
+* Fundamental structure in lambda is the function
+* A function is a bundle of code with a specified execution entry point
+* Each lambda is configured with a platform such as Node, Java, Go, or other languagaes
+* Each lambda is configured with invokation targets such as API Gateway, CloudWatch or CloudFront
+* Other configuration options include execution timeout, memory requirements and IAM role lambda should execute with
+
+Lambda is great for small, irregular tasks, i.e. nightly ETL kickoffs or notification-type functions
+* Much easier to create a lambda function than to stand up an EC2 instance
