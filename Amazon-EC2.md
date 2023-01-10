@@ -22,3 +22,21 @@ EC2 provides **secure and resizable compute capacity** for virtually any workloa
 * Rules for automatically scaling EC2 instances up and down 
 * Use EC2 for scaling AMIs
 * Use EB for scaling applications
+
+### Elastic Block Store (EBS)
+* Storage service that makes it easy to calculate charges for storage
+* Volumes that live independently of EC2 instances, and can be retained or deleted when EC2 instance is deleted
+
+### EBS vs S3
+* Use EBS for EC2 file systems - used specifically with EC2
+* Use S3 for file storage (storing and serving up independent files)
+
+### Steps to Launch an EC2 Instance
+
+1. Choose AMI
+2. Choose instance type
+3. Configure instance
+4. Add storage
+5. Tag instance 
+6. Configure security group
+7. Review
