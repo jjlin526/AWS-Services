@@ -1,6 +1,7 @@
 ### Amazon Elastic Compute Cloud (Amazon EC2)
 
-EC2 provides **secure and resizable compute capacity** for virtually any workload.
+EC2 provides **secure and resizable compute capacity** for virtually any workload
+* Instances running computing operations can increase or decrease at will
 
 ### Amazon Machine Image (AMI)
 
@@ -10,3 +11,6 @@ EC2 provides **secure and resizable compute capacity** for virtually any workloa
 
 ![image](https://user-images.githubusercontent.com/114364831/211567733-101f8ce3-5f2a-4ac6-a903-8bbf83ad292a.png)
 
+### Basic Unit of EC2
+
+* EC2 instance
