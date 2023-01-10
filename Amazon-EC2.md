@@ -24,10 +24,12 @@ EC2 provides **secure and resizable compute capacity** for virtually any workloa
 * Use EB for scaling applications
 
 ### Elastic Block Store (EBS)
+
 * Storage service that makes it easy to calculate charges for storage
 * Volumes that live independently of EC2 instances, and can be retained or deleted when EC2 instance is deleted
 
 ### EBS vs S3
+
 * Use EBS for EC2 file systems - used specifically with EC2
 * Use S3 for file storage (storing and serving up independent files)
 
@@ -37,6 +39,27 @@ EC2 provides **secure and resizable compute capacity** for virtually any workloa
 2. Choose instance type
 3. Configure instance
 4. Add storage
-5. Tag instance 
+5. Tag instance (meta values added to instance)
 6. Configure security group
-7. Review
+7. Review (create instance with key pair)
+
+### Security Group
+
+* IP-based communication rules for a single or group of EC2 instances
+* Little firewalls configured at per-instance basis
+* A security group controls which IPs can talk to the instance and which instance the IPs can talk to
+
+### Example Security Group Scenarios
+
+* Control who can SSH into EC2 instance
+* Allow access between EC2 instances
+* Allow access to databases
+* Accept HTTP requests
+
+### Amazon EC2 Pricing
+
+* EC2 instances are charged by the hour based on : instance type and AMI type (Windows image costs more than a Linux image due to licensing paid for by Amazon)
+
+### EC2 Instance Pricing
+
+* Spots instances are cheaper than reserved instances which are cheaper than on-demand instances.
