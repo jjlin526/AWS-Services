@@ -64,3 +64,8 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/212150300-e36338ab-9f8b-4fc2-82ea-15ae29c2b9fa.png)
 
+### Building a Business Case for the Cloud
+
+![image](https://user-images.githubusercontent.com/114364831/212150705-61b6ed9b-aed4-434f-a53a-16322a16e3a6.png)
+
+![image](https://user-images.githubusercontent.com/114364831/212150783-ea4d8eb1-f89f-44e3-9dff-79256b6db38c.png)
