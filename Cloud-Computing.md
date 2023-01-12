@@ -30,6 +30,19 @@
 * Reduces risk for the organization around security and compliance
 * Provides access to emerging technologies
 
+### Cloud Computing
+
+* Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the Internet with pay-as-you-go pricing
+
+### Cloud Computing Models
+
+![image](https://user-images.githubusercontent.com/114364831/212095180-b4f8f42e-1994-45cb-9a33-45d5afc2bd8f.png)
+
+### Cloud Deployment Models
+
+![image](https://user-images.githubusercontent.com/114364831/212096743-a5deed9a-72ae-434f-804f-b38166193178.png)
+
+
 
 
 
