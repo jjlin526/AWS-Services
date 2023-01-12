@@ -32,5 +32,33 @@
 
 Wavelength Zones are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers' (CSP) 5G networks, so application traffic from 5G devices reach application servers running in Wavelength Zones without leaving the telecommunications network.
 
+### Points of Presence
+
+Points of presence are elements of the AWS global infrastructure that exist outside of AWS regions. These elements are located in or near populated areas, and specific AWS services use them to deliver content to end users as quickly as possible. Within the overall points of presence, there are two types of infrastructure:
+* Edge locations
+* Regional edge caches
+
 ### AWS Edge Locations
 
+* Used as nodes of a global **content delivery network (CDN)**
+* Utilized by Amazon CloudFront and Amazon Route 53
+* Located globally at over 400 different locations
+* Allows AWS to serve content from locations closest to users
+
+### Visualizing AWS Global Infrastructure
+
+* https://aws.amazon.com/about-aws/global-infrastructure/
+
+### Scenarios
+
+1. Jane's company is looking to transition to AWS. They are starting with a few workloads. It is a requirement to store backup data in multiple geographic areas. Which element of the AWS global infrastructure will best suit this need?
+
+* **AWS Region** (deploy workload in one region, but store backup data in other regions)
+
+2. Tim's company serves content through their site to users around the globe. They are looking to optimize performnace to users around the world. They want to leverage a Content Delivery Network (CDN). Which element of the AWS global infrastructure will be used in this case?
+
+* **AWS Edge Location** (utilized by CloudFront)
+
+3. Ellen's company is transitioning one of their legacy applications to AWS. This application requires uptime of at least 99.5%. They want to be sure any issues at a single data center do not cause an outage. Which element of the AWS global infrastructure supports this need?
+
+* **AWS Availability Zone (AZ)** (high uptime requires high availability - taking advantage of multiple AZs within a single region)
