@@ -50,3 +50,11 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 - Instance Store: if you shut down the server, the data is gone (ephemeral)
 - Elastic Block Store (EBS): if you shut down the server, the data is still there (persistent)
 - EBS should be used for most work done with EC2
+
+### Amazon Machine Image (AMI)
+
+* **Template for an EC2 instance** including configuration, operating system, and data
+* AWS provides many AMI's that can be leveraged (many AMI's provided by AWS that are easy to spin up an instance from)
+* AMI's can be shared across AWS accounts
+* Custom AMI's can be created based on your configuration
+* Commercial AMI's are available in the AWS Marketplace
