@@ -104,3 +104,11 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 
 ![image](https://user-images.githubusercontent.com/114364831/212389190-59b1cedd-8b04-4ebd-943e-1a605dc7aa90.png)
 
+### Reserved Instance EC2 Pricing Example
+
+![image](https://user-images.githubusercontent.com/114364831/212390276-644429c1-ffc0-4927-a043-4489ef1ffe63.png)
+
+### Spot Instance EC2 Pricing Example
+
+![image](https://user-images.githubusercontent.com/114364831/212390697-1712484f-2df9-4340-bc2d-9aac80402a67.png)
+
