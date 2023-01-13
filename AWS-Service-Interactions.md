@@ -39,3 +39,17 @@
 2. Install AWS CLI or use AWS CloudShell
 3. Configure AWS CLI to use credentials created
 4. Access some AWS resources like S3 buckets created within the account: i.e. `aws s3 ls --profile pstest`
+
+### Scenario-based Review
+
+1. Roger's comapny runs several production workloads in AWS. They have a new web application that manages digital assets for marketing. They need to automatically create a user account in Amazon Cognito (user directory for custom application) on sign-up. They want this to seamlessly integrate into the application (React-based web application with microservices in back-end written in Node.js). Which interaction method would Roger's company use for this?
+
+* Software Development Kit (SDK) -- bake into custom application (can leverage SDK to enable Node.js to interact with Amazon Cognito within his web app)
+
+2. Eliza's company is considered transitioning to AWS. They want to leverage Amazon Relational Database Service. Eliza wants to test out a single database on the service. What interaction method would Eliza use for this use case?
+
+* AWS Console (no automation, not for production - just get in and use the service)
+
+3. Jennier's company is a startup. They created a social network for entrepreneurs with a web and mobile app. Jennifer has a set of tasks she needs to run on AWS each day to generate reports. What interaction method would Jennifer use for this use case?
+
+* Command Line Interface (CLI -- i.e. custom script) - or SDK for automation (back it into a custom application using one of the support programming languages)
