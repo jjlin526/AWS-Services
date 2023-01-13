@@ -52,4 +52,4 @@
 
 3. Jennier's company is a startup. They created a social network for entrepreneurs with a web and mobile app. Jennifer has a set of tasks she needs to run on AWS each day to generate reports. What interaction method would Jennifer use for this use case?
 
-* Command Line Interface (CLI -- i.e. custom script) - or SDK for automation (back it into a custom application using one of the support programming languages)
+* Command Line Interface (CLI -- i.e. custom script) - or SDK for automation (bake it into a custom application using one of the support programming languages)
