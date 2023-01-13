@@ -24,3 +24,16 @@
 * **Security groups**: A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
 
 * **Network ACLs**: A network ACL is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets.
+
+* Supports public and private subnets
+* Can utilize **NAT** for private subnets
+  * In Amazon VPC, a NAT device is a virtual machine (VM) that sits in a public subnet and acts as a gateway for instances in a private subnet. Instances in the private subnet send their outbound traffic to the NAT device, which then forwards it to the Internet. The NAT device also translates the private IP addresses of the instances in the private subnet to the public IP address assigned to the NAT device, allowing the Internet to respond to the requests.
+* Enables a connection to your data center
+* Can connect to other VPC's (peering connection)
+* Supports private connections to many AWS services
+  * Sensitive applications can stay within VPC (does not have to send traffic through internet) even when using specific AWS services
+
+### AWS Direct Connect
+
+* A cloud service solution that makes it easy to establish a dedicated netowrk connection from your data center to AWS (or a VPC)
+* E.g. you have a business app that uses app data stored in data center, but app itself runs on AWS. It would be ideal to have a high-speed connection between your data center and app directly, without having to send it through the internet
