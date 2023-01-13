@@ -78,3 +78,16 @@
 ### Scaling on Amazon EC2
 
 ![image](https://user-images.githubusercontent.com/114364831/212412886-fed2a618-bd1d-49d6-85d5-ac1554f87500.png)
+
+* Vertical scaling -- e.g. t3-medium - server not responding or dropping connection for users, replace with m4.xlarge - but have to shut down server down, add additional resources by changing instance type and spin it back up.This is not the best way... Prefer:
+* Horizontal scaling -- leverage elastic load balancing by adding additional instances to handle the demand of the app. E.g. have a t3-medium server, add two more t3-medium servers and rely on horizontal scaling with elastic load balancer to handle process of routing users to correct server. Can leverage auto scaling groups alongside elastic load balancing to make this work.
+
+### Amazon CloudFront
+
+* Leverages AWS edge locations (most prevelant form of AWS global infrastructure)
+* **Content delivery network (CDN)** -- servers around the world that you can send your content to
+* Enables users to get content from server closest to them
+* Supports static and dynamic content
+* Includes advanced security features:
+  * AWS Shield for DDoS
+  * AWS WAF
