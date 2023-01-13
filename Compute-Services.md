@@ -21,6 +21,12 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 
 ![image](https://user-images.githubusercontent.com/114364831/212366239-a6b943b8-3140-472a-8f12-1cd376d45d94.png)
 
+### Auto Scaling and Horizontal Scaling
+
+* **Amazon EC2 Auto Scaling** is a service that automatically adds or removes EC2 instances from a group based on user-defined policies and health checks. It enables you to maintain application availability and scale your Amazon EC2 capacity up or down automatically according to conditions you define.
+* **Horizontal scaling**, also called "scaling out," is the process of adding more resources (such as adding more servers) to a system to handle increased load. This is in contrast to "scaling up," which is the process of increasing the capacity of existing resources (such as upgrading a server with more memory or a faster CPU).
+* Auto Scaling is a way to automatically increase the number of Amazon EC2 instances in a group as the demand for instances increases, and decrease the number of instances as the demand decreases. This is a form of horizontal scaling.
+
 ### Amazon EC2 Instance Types
 
 * Defines the processor, memory, and storage type
@@ -142,4 +148,17 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * Few customizations needed (i.e. if need specific AMI, need specific package and do not want to upgrade to another version of the package, then use EC2 directly - not EB)
 
 ### AWS Lambda Overview
+
+* AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume. You can run code for virtually any type of service - all with zero administration.
+
+### AWS Lambda
+
+* Enables the running of code without provisioning infrastructure
+* Only charged for usage based on execution time
+* Can configure available memory from 128 MB to 3008 MB
+* Integrates with many AWS services (i.e. S3, DynamoDB)
+* Enables **event-driven workflows** (i.e. when I upload a file, execute this function)
+* Primary service for **serverless architecture**
+
+### AWS Lambda Advantages
 
