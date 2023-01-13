@@ -97,3 +97,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
   * Server software licensing
     * Dedicated Hosts are required when using certain types of server software licenses, such as those that are based on the physical characteristics of the server, rather than the number of instances or cores. This is because these types of licenses are tied to the physical server, and cannot be used with instances running on shared hosts.
   * Compliance requirement
+
+### Amazon EC2 Purchase Options
+
+![image](https://user-images.githubusercontent.com/114364831/212376746-f6e8be3e-d8ba-4f32-a45d-1a3ce5e15bc2.png)
