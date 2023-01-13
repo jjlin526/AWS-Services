@@ -37,3 +37,23 @@
 
 * A cloud service solution that makes it easy to establish a dedicated netowrk connection from your data center to AWS (or a VPC)
 * E.g. you have a business app that uses app data stored in data center, but app itself runs on AWS. It would be ideal to have a high-speed connection between your data center and app directly, without having to send it through the internet
+
+### Amazon Route 53 (DNS Service)
+
+* Domain name service (DNS)
+* Global AWS service (not regional -- all changes applied globally)
+* Highly available (and enables creation of highly available services)
+* Enables global resource routing
+   * Send people to specific server based on which country they are coming in from
+   * Or, send them to server that responds the fastest
+
+### DNS
+
+* DNS translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols
+
+### Route 53 High Availability
+
+![image](https://user-images.githubusercontent.com/114364831/212410761-152287ce-8e7f-402a-b9ec-718ba1213136.png)
+
+- If us-east-1 server goes down due to deploying a bad configuration, Route 53 can be configured with a failover by routing users to eu-west-1 in Dublin
+- User will not know that anything has changed by routing to a new server
