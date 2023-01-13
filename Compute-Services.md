@@ -162,3 +162,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 
 ### AWS Lambda Advantages
 
+* Reduced maintenance requirements
+* Enables fault tolerance without additional work (runs across multiple AZ's - no single point of failure can take down the app -- built into Lambda)
+* Scales based on demand 
+* Pricing is based on usage (i.e. but for EC2, a server supports 1 000 people but only 10 people using it - still have to pay for whole server -- Lambda maps to direct usage)
