@@ -43,7 +43,10 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * p3.16xlarge is a very specialized instance type from the **accelerated computing** category which provides access to industry-leading GPUs for machine learning workflows. Although it appears to have less virtual CPUs, it has special capabilities in the p3 instance type family.
 * i3.16xlarge is a storage-optimized instance type - has special access to storage capabilities
 
+### Root Device Type
 
+![image](https://user-images.githubusercontent.com/114364831/212370984-a509eff1-ba61-4aee-ac5d-a74784a41e2f.png)
 
 - Instance Store: if you shut down the server, the data is gone (ephemeral)
 - Elastic Block Store (EBS): if you shut down the server, the data is still there (persistent)
+- EBS should be used for most work done with EC2
