@@ -101,3 +101,6 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 ### Amazon EC2 Purchase Options
 
 ![image](https://user-images.githubusercontent.com/114364831/212376746-f6e8be3e-d8ba-4f32-a45d-1a3ce5e15bc2.png)
+
+![image](https://user-images.githubusercontent.com/114364831/212389190-59b1cedd-8b04-4ebd-943e-1a605dc7aa90.png)
+
