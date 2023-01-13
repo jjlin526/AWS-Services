@@ -120,3 +120,24 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * Only pay for the other services you leverage
 * Handles **provisioning, load balancing, scaling, and monitoring**
 
+### Support Application Platforms
+
+* Java
+* .NET
+* PHP
+* Node.js
+* Python
+* Ruby
+* Go
+* Docker
+
+### Elastic Beanstalk Features
+
+![image](https://user-images.githubusercontent.com/114364831/212394997-906d7dd1-518e-49cd-80a2-c5617d34ccca.png)
+
+### Use Cases
+
+* Deploy an application with minimal knowledge of other services (i.e. know Elastic Beanstalk (EB) but not familiar with administering EC2 servers, auto scaling groups, getting metrics from CloudWatch, setting scaling rules, etc.)
+* Reduce the overall maintenance needed for the application
+* Few customizations needed (i.e. if need specific AMI, need specific package and do not want to upgrade to another version of the package, then use EC2 directly - not EB)
+
