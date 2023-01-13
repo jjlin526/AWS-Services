@@ -57,3 +57,24 @@
 
 - If us-east-1 server goes down due to deploying a bad configuration, Route 53 can be configured with a failover by routing users to eu-west-1 in Dublin
 - User will not know that anything has changed by routing to a new server
+
+### Elastic Load Balancing
+
+### Elasticity
+
+* The ability for the infrastructure supporting an application to grow and contract based on how much it is used at a point in time
+
+### Elastic Load Balancing
+
+* Distributes traffic across multiple targets
+* Integrates with EC2, ECS, and Lambda
+* Supports one or more AZ's in a region
+  * E.g. want to have customer website running across 3 AZ's, want servers in each AZ; leverage ELB to distribute users to the server in one of the three AZ's
+* Three types of load balancers:
+  * Application Load Balancer (ALB)
+  * Network Load Balancer (NLB)
+  * Classic Load Balancer (ELB)
+
+### Scaling on Amazon EC2
+
+![image](https://user-images.githubusercontent.com/114364831/212412886-fed2a618-bd1d-49d6-85d5-ac1554f87500.png)
