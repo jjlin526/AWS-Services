@@ -91,3 +91,10 @@
 * Includes advanced security features:
   * AWS Shield for DDoS
   * AWS WAF
+
+### Amazon API Gateway
+
+* Fully managed API management service
+* Directly integrates with multiple AWS services
+* Provides monitoring and metrics on API calls
+* Supports VPC and on-premise private applications
