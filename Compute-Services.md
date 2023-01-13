@@ -112,3 +112,11 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 
 ![image](https://user-images.githubusercontent.com/114364831/212390697-1712484f-2df9-4340-bc2d-9aac80402a67.png)
 
+### AWS Elastic Beanstalk
+
+* Automates the process of deploying and scaling workloads on EC2 (PaaS; not IaaS because it does not deal with the servers directly)
+* Supports a specific set of technologies
+* Leverages existing AWS services
+* Only pay for the other services you leverage
+* Handles **provisioning, load balancing, scaling, and monitoring**
+
