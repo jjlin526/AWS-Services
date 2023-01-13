@@ -36,7 +36,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 
 ![image](https://user-images.githubusercontent.com/114364831/212369350-26b8baa6-42ca-440b-accd-7749eddbcc1c.png)
 
-* t3.medium and m5.large are generalpurpose instance types
+* t3.medium and m5.large are general-purpose instance types
 * t3 
   * T3 instances are the low cost burstable general purpose instance type that provide a baseline level of CPU performance with the ability to burst CPU usage at any time for as long as required. T3 instances are designed for applications with moderate CPU usage that experience temporary spikes in use.
 * c5d.24xlarge is a **compute-optimized** instance type
