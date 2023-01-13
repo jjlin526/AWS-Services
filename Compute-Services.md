@@ -58,3 +58,42 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * AMI's can be shared across AWS accounts
 * Custom AMI's can be created based on your configuration
 * Commercial AMI's are available in the AWS Marketplace
+
+### Amazon EC2 Purchase Options
+
+![image](https://user-images.githubusercontent.com/114364831/212372667-72ab2157-4255-4e3e-82e0-e5d9d97813b8.png)
+
+### EC2 Reserved Instance Types
+
+![image](https://user-images.githubusercontent.com/114364831/212372922-048086c4-1d57-4b1c-8830-371cba2209f8.png)
+
+* Companies choose **Reserved Instances** because they come with substantial discounts compared to pay-as-you-go On-Demand pricing. All it takes is committing to a specified cloud capacity for a specified period of time. In AWS, it is one year or three years.
+
+### Standard Reserved Instance Cost Models
+
+![image](https://user-images.githubusercontent.com/114364831/212373112-c4281578-6ec0-4fb5-87d8-2cb7e4c6fc96.png)
+
+### Savings Plans
+
+* Similar in concept to reserved instances
+* Supports compute with EC2, Fargate, and Lambda
+* Unlike Reserved Instances, it does not reserve capacity
+* Provide savings of up to 72%
+* Comes in 1 or 3 year terms
+
+### Spot Instances
+
+* **Spot instances** enable you to leverage excess EC2 compute capacity (that might exist within an AZ)
+* Can provide up to 90% discount over on-demand pricing
+* There is a market price for isntnace types per availability zone called the **Spot price**
+* When you request instances, if your bid is higher than the Spot price, they will launch
+* If the Spot price grows to exceed your bid, the instances will be terminated 
+* Spot instances can be notified 2 minutes prior to termination
+* Use case: workloads that can start and stop without affecting what you are trying to do
+
+### Dedicated Host
+
+* The dedicated host pricing model gives you a dedicated physical server. It will be the most expensive option, but it may be required for either
+  * Server software licensing
+    * Dedicated Hosts are required when using certain types of server software licenses, such as those that are based on the physical characteristics of the server, rather than the number of instances or cores. This is because these types of licenses are tied to the physical server, and cannot be used with instances running on shared hosts.
+  * Compliance requirement
