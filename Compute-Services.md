@@ -166,3 +166,18 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * Enables fault tolerance without additional work (runs across multiple AZ's - no single point of failure can take down the app -- built into Lambda)
 * Scales based on demand 
 * Pricing is based on usage (i.e. but for EC2, a server supports 1 000 people but only 10 people using it - still have to pay for whole server -- Lambda maps to direct usage)
+
+### Scenario Review
+
+1. Sylvia's company is in the process of moving multiple workloads into AWS. One workload is an application that will be leveraged for at least 5 more years. The organization is looking to be as cost efficient as possible for its EC2 usage. What EC2 purchase option should be chosen for this application?
+
+* All Upfront Reserved - 3 Years
+
+2. Edward is looking to deploy his PHP web application to a virtual server. He does not have experience managing EC2 instances on AWS. He needs the ability to scale this application to meet user demand. What is the best compute option for Edward based on this crtieria?
+
+* AWS Elastic Beanstalk (EB) -- supports PHP and handles scaling
+
+3. Cindy's company is transitioning to the cloud for its data processing workloads. The workloads happen daily and can start or stop without a problem. This workload will be leveraged for at least one year. What EC2 purchase option would be the most cost efficient choice?
+
+* Spot Instances 
+-- can start or stop without a problem (always spot instance - most cost efficient)
