@@ -141,3 +141,5 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizab
 * Reduce the overall maintenance needed for the application
 * Few customizations needed (i.e. if need specific AMI, need specific package and do not want to upgrade to another version of the package, then use EC2 directly - not EB)
 
+### AWS Lambda Overview
+
