@@ -98,3 +98,8 @@
 * Directly integrates with multiple AWS services
 * Provides monitoring and metrics on API calls
 * Supports VPC and on-premise private applications
+
+### AWS Global Accelerator
+
+* AWS Global Accelerator is a networking service that sends your user's traffic through Amazon Web Service's global network infrastructure, improving your internet user performance by up to 60%.
+
