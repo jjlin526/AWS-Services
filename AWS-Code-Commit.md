@@ -22,3 +22,15 @@ Cases in which CodeCommit is not the correct solution:
 
 * To version large files, consider Amazon Simple Storage Service (Amazon S3)
 
+**Use case:**
+
+* Database
+
+**Description:**
+
+* Git repositories grow larger over time. Because versioning tracks all changes, any change will increase your repository size. In other words, as you commit data, even if you delete data in a commit, data is added to a repository. As there is more data to process and transmit over time, Git will slow down. This is particularly detrimental to a database use case. Git was not designed as a database.
+
+**Solution:**
+
+* To create and use a database with consistent performance regardless of size, consider Amazon DynamoDB.
+
