@@ -17,3 +17,8 @@ Cases in which CodeCommit is not the correct solution:
 **Description:**
 
 * Git uses **delta encoding** to store differences between versions of files. For example, if you change a few words in a document, Git will only store those changed words. If you have files or objects over 5 MB with many changes, Git might need to reconstruct a large chain of delta differences. This can consume an increasing amount of compute resources on both your local computer and in CodeCommit as these files grow over time.
+
+**Solution:**
+
+* To version large files, consider Amazon Simple Storage Service (Amazon S3)
+
