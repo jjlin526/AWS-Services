@@ -66,3 +66,23 @@ Cases in which CodeCommit is not the correct solution:
 **Solution:**
 
 * Back up all data types with AWS. Our storage services for object (Amazon S3 and Amazon S3 Glacier), file (Amazon Elastic File System), and block (Amazon Elastic Block Storage) support industry-leading scalability, availability, durability, and security so your backups are protected and available when needed.
+
+### Five Incorrect Use Case
+
+**Use case:**
+
+* Large numbers of branches or references
+
+**Description:**
+
+* When a Git client pushes or pulls repository data, the remote server must send all branches and references such as tags, even if you are only interested in a single branch. If you have thousands of branches and references, this can take time to process and send (pack negotiation) and result in apparently slow repository response. The more branches and tags you have, the longer this process can take. We recommend using CodeCommit, but delete branches and tags that are no longer needed.
+
+**Solution:**
+
+* To analyze the number of references in a CodeCommit repository to determine which might not be needed, you can use one of the following commands:
+    * Linux, macOS, or Unix, or Bash emulator on Windows:
+        * `git ls-remote | wc -l`
+            * The command `git ls-remote` is used to show references in a remote repository, and the output of that command is piped to the command `wc -l`, which counts the number of lines in the output. So the command will show the number of references (such as branches or tags) in a remote repository.
+    * Powershell:
+        * `git ls-remote | Measure-Object -line`
+            * The command `git ls-remote` lists references in a remote repository, while `Measure-Object -line` is a PowerShell command that counts the number of lines in the output of the previous command. Together, this command would list the references in a remote repository and display the number of lines in the output.
