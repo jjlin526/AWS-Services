@@ -10,7 +10,7 @@ Provides the ability to host highly **scalable private Git repositories** and co
 
 Cases in which CodeCommit is not the correct solution:
 
-### First Use Case
+### First Incorrect Use Case
 
 **Use case:**
 
@@ -24,7 +24,7 @@ Cases in which CodeCommit is not the correct solution:
 
 * To version large files, consider Amazon Simple Storage Service (Amazon S3)
 
-### Second Use Case
+### Second Incorrect Use Case
 
 **Use case:**
 
@@ -38,7 +38,7 @@ Cases in which CodeCommit is not the correct solution:
 
 * To create and use a database with consistent performance regardless of size, consider Amazon DynamoDB.
 
-### Third Use Case
+### Third Incorrect Use Case
 
 **Use case:**
 
@@ -52,7 +52,7 @@ Cases in which CodeCommit is not the correct solution:
 
 * To store audit trails, consider Amazon Simple Storage Service (Amazon S3). To audit AWS activity, depending on your use case, consider using AWS CloudTrail, AWS Config, or Amazon CloudWatch.
 
-### Fourth Use Case
+### Fourth Incorrect Use Case
 
 **Use case:**
 
