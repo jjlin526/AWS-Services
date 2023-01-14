@@ -10,6 +10,8 @@ Provides the ability to host highly **scalable private Git repositories** and co
 
 Cases in which CodeCommit is not the correct solution:
 
+### First Use Case
+
 **Use case:**
 
 * Large files that change frequently
@@ -21,6 +23,8 @@ Cases in which CodeCommit is not the correct solution:
 **Solution:**
 
 * To version large files, consider Amazon Simple Storage Service (Amazon S3)
+
+### Second Use Case
 
 **Use case:**
 
@@ -34,6 +38,8 @@ Cases in which CodeCommit is not the correct solution:
 
 * To create and use a database with consistent performance regardless of size, consider Amazon DynamoDB.
 
+### Third Use Case
+
 **Use case:**
 
 * Audit trails
@@ -46,3 +52,16 @@ Cases in which CodeCommit is not the correct solution:
 
 * To store audit trails, consider Amazon Simple Storage Service (Amazon S3). To audit AWS activity, depending on your use case, consider using AWS CloudTrail, AWS Config, or Amazon CloudWatch.
 
+### Fourth Use Case
+
+**Use case:**
+
+* Backups
+
+**Description:**
+
+* Git was designed to version source code written by developers. You can push commits to two remote repositories, including a CodeCommit repository, as a backup strategy. However, Git was not designed to handle backups of your computer file system, database dumps, or similar backup content. Doing so might slow down your system and increase the amount of time required to clone and push a repository.
+
+**Solution:**
+
+* Back up all data types with AWS. Our storage services for object (Amazon S3 and Amazon S3 Glacier), file (Amazon Elastic File System), and block (Amazon Elastic Block Storage) support industry-leading scalability, availability, durability, and security so your backups are protected and available when needed.
