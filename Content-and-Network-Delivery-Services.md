@@ -117,4 +117,9 @@
 * Traffic is optimized by using AWS network instead of public Internet (with IP-based resolution)
 * Results in improvement of first byte latency, jitter and throughput (overall more efficient request)
 * Provides superior fault tolerance by not relying on DNS solution
-  * Most solutions use a host name; IP address of host name might get cached; if using Route 53 for failover, if client needs to failover to a new region, in some cases the switchover may not be seamless (but because of global accelerator, it is able to make the transition seamlessly due to IP-based resolution)
+  * Most solutions use a host name; IP address of host name might get cached; if using Route 53 for failover, if client needs to failover to a new region, in some cases the switchover may not be seamless (but because of AWS Global Accelerator, it is able to make the transition seamlessly due to IP-based resolution)
+
+### AWS Global Accelerator Use Cases
+
+![image](https://user-images.githubusercontent.com/114364831/212754983-a82a0aea-5fb6-4ace-b27d-648a73e078a6.png)
+
