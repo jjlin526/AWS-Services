@@ -123,3 +123,24 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/212754983-a82a0aea-5fb6-4ace-b27d-648a73e078a6.png)
 
+### Scenario-Based Review
+
+### Scenario 1
+
+Jane's comapny maintains two corporate data centers. They want their data centers to work alongside AWS for specific workloads. She is wondering if there is a way to  have a persistent connection to AWS. What service from AWS would you recommend her company implement?
+
+* AWS Direct Connect (can build direct connections between data centers and AWS; traffic does not need to go over the public internet - communication can happen behind the firewall)
+
+### Scenario 2
+
+Tim's company serves content through their site to users around the globe. They are looking to optimize performance to users around the world. They want to leverage a Content Delivery Network (CDN). Which service would enable optimzed performance globally for their content?
+
+* Amazon CloudFront (CDN present on AWS)
+
+### Scenario 3
+
+Ellen's company has an internal application that runs on an EC2 server. Currently, there is downtime as demand is greater than capacity for the server. Which scaling approach would you recommend and what services should they use?
+
+* Horizontal Scaling ("scaling out") using Elastic Load Balancer
+  * Preferable over bigger servers because it can handle future loads; bigger servers may have to be taken down again resulting in downtime to get even bigger servers
+  * Elastic Load Balancing routes users to the best server for them to use
