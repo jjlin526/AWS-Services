@@ -103,3 +103,18 @@
 
 * AWS Global Accelerator is a networking service that sends your user's traffic through Amazon Web Service's global network infrastructure, improving your internet user performance by up to 60%.
 
+* Utilizes IP addresses that route to edge locations
+* Once request reaches edge locations, traffic is routed through AWS network
+* Can route requests to many AWS resources
+  * Network Load Balancer (NLB)
+  * Application Load Balancer (ALB)
+  * EC2 Instances
+  * Elastic IP Address
+ 
+### Performance Improvements 
+ 
+* Distance between user and initial endpoint is minimized by using edge locations (same with CloudFront)
+* Traffic is optimized by using AWS network instead of public Internet (with IP-based resolution)
+* Results in improvement of first byte latency, jitter and throughput (overall more efficient request)
+* Provides superior fault tolerance by not relying on DNS solution
+  * Most solutions use a host name; IP address of host name might get cached; if using Route 53 for failover, if client needs to failover to a new region, in some cases the switchover may not be seamless (but because of global accelerator, it is able to make the transition seamlessly due to IP-based resolution)
