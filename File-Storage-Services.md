@@ -33,3 +33,7 @@
 * Transitions can enable objects to move to another storage based on time (i.e. can configure a certain file to last for 30 days based on **Lifecycle Policies**)
 * Expiration can delete objects based on age 
 * Policies can also factor in versions of a specific object in the bucket (i.e. can delete a version of the file that is not the current version after 7 days)
+
+### S3 Transfer Acceleration
+
+* Feature that can be enabled per bucket that allows for optimized uploading of data using the AWS Edge Locations are part of Amazon CloudFront -- (upload data in a fast and efficient way into S3 buckets)
