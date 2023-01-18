@@ -137,3 +137,23 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/213296139-2c8627d2-8afa-4515-955f-003795458589.png)
 
+### Large-scale Data Transfer into AWS
+
+### AWS Snowball
+
+* Designed for large-scale data transfer
+* Supports petabyte scale transfer
+* Physical device is delivered by AWS
+* You connect the Snowball to your network and upload your data
+* Device is returned by local carrier
+* AWS receives device and loads your data into S3
+
+### AWS Snowmobile
+
+* Designed for large-scale data transfer
+* Supports exabyte scale transfer
+* Ruggedized shipping container is delivered to your location
+* AWS sets up a connection to your network (from shipping container)
+* You load your data on the Snowmobile
+* AWS will load data into S3 when the container is received at an AWS location
+
