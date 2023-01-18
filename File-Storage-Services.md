@@ -107,3 +107,17 @@
 
 ### Elastic File System
 
+* Fully managed Network File System (NFS)
+* Designed for Linux workloads
+* Supports up to petabyte scale
+* Stores data across multiple AZ's
+* Provides two different storage classes
+   * Standard
+   * Infrequent access
+* Provides configurable lifecycle data rules (transition between storage classes)
+
+### EFS Example
+
+![image](https://user-images.githubusercontent.com/114364831/213291495-205232f8-1015-4aa7-be25-d1ab17a6ec59.png)
+
+* EFS has the ability to be a network file system that attaches to multiple EC2 instances at the same time (EBS can only attach to a single EC2 instance) -- EFS has a mount point within each AZ
