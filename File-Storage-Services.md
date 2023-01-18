@@ -157,3 +157,14 @@
 * You load your data on the Snowmobile
 * AWS will load data into S3 when the container is received at an AWS location
 
+### Summary
+
+* Reviewed the storage services on AWS
+* Examined Amazon S3 and its capabilities
+* Implemented a static website on Amazon S3
+* Explored archive capabilities with Glacier and Glacier Deep Archive
+* Reviewed EC2 storage leveraging EBS and EFS
+* Examined large-scale data transfer services into AWS
+
+
+
