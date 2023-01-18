@@ -77,3 +77,11 @@
 ### S3 Glacier Setup
 
 * The AWS Management Console can be used to quickly set up Amazon S3 Glacier. Data can then be uploaded and retrieved programatically (CLI or SDK) -- situation in which certain things cannot be done in the console
+
+### Elastic Block Store (EBS)
+
+### Amazon EC2 File Storage Services
+
+![image](https://user-images.githubusercontent.com/114364831/213287437-55ca8e6b-a8e1-4be7-a421-3f740fb90079.png)
+
+* EFS is a network file system designed for Linux-based workloads
