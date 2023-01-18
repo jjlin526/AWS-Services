@@ -126,6 +126,14 @@
 
 * Fully managed native Windows file system (as opposed to Linux file system with EFS)
 * Includes native Windows features including:
-   * SMB support (allows devices to access and share files and resources over the network using the SMB protocol)
-   * Active Directory integration (a directory service that authenticates and authorizes all users and computers in a Windows domain type network, and it is an integral part of the Windows operating system)
-   * Windows NFTS (New Technology File System -- a file system that is used by the Windows operating system to store and manage files. It provides advanced features such as file and folder permissions, encryption, and disk quotas)
+   * **SMB support** (allows devices to access and share files and resources over the network using the SMB protocol)
+   * **Active Directory** integration (a directory service that authenticates and authorizes all users and computers in a Windows domain type network, and it is an integral part of the Windows operating system)
+   * **Windows NFTS** (New Technology File System -- a file system that is used by the Windows operating system to store and manage files. It provides advanced features such as file and folder permissions, encryption, and disk quotas)
+* Utilizes SSD drives for low latency
+
+### Data Transfer with AWS Snowball
+
+### AWS Large Scale Data Transfer Services
+
+![image](https://user-images.githubusercontent.com/114364831/213296139-2c8627d2-8afa-4515-955f-003795458589.png)
+
