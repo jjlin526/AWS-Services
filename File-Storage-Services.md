@@ -100,3 +100,8 @@
    * Provisioned IOPS SSD
    * Throughput optimized HDD
    * Cold HDD
+
+### Amazon EBS Volume Types
+
+![image](https://user-images.githubusercontent.com/114364831/213289143-0a591768-4b65-436a-ba5c-26c13cb3e612.png)
+
