@@ -166,5 +166,23 @@
 * Reviewed EC2 storage leveraging EBS and EFS
 * Examined large-scale data transfer services into AWS
 
+### Scenario-based Review  
 
+### Scenario 1
+
+Elaine launched a site that offers daily tutorials for developers. She uses S3 to store the assets needed per tutorial. These assets are very popular within the week the tutorial is launched. After this initial week, these assets are rarely accessed. How could Elaine reduce her S3 costs while maintaining durability?
+
+* **S3 lifecycle rules with S3-Standard Infrequent Access (IA) storage class** (S3 lifecycle rules - assets are only popular within the week the tutorial is launched -- define policy that changes storage class of data after 7 days of being placed in the S3 bucket; S3-Standard IA storage class because data is not frequently accessed, not One Zone-IA in order to maintain durability of data)
+
+### Scenario 2
+
+Esteban works for a social networking company and they are moving to AWS. They have 2 PB of user-generated content that they need to migrate. Esteban is trying to determine if there is a faster way than uploading over the internet. Would there be another approach for Esteban's company?
+
+* **AWS Snowball** (need AWS Snowmobile for exabytes of data)
+
+### Scenario 3
+
+Emily works for a company that produces a message app. She is looking for a shared file system between 8 different Linux EC2 instances. The file system would need to support roughly 1 PB of data. What approach would you recommend for Emily?
+
+* **Amazon Elastic File System** (needs to be for Linux instances and needs to be for petabytes of data or less, not in exabytes)
 
