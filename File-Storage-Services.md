@@ -21,3 +21,8 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/212760937-bd28347d-23ac-4aa4-9c3e-9d77116931c4.png)
 
+### S3 Intelligent Tiering Storage Class
+
+* Automatically move files based on access
+* Moves between frequent and infrequent access
+* Same performance as S3-Stanard (can provide cost savings if you have some data that needs to be moved between storage classes)
