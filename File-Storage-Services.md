@@ -85,3 +85,8 @@
 ![image](https://user-images.githubusercontent.com/114364831/213287437-55ca8e6b-a8e1-4be7-a421-3f740fb90079.png)
 
 * EFS is a network file system designed for Linux-based workloads
+
+### Amazon Elastic Block Store (EBS)
+
+* Block storage designed to be connected to a single EC2 instance that can scale to support petabytes of data and support multiple volume types based on need.
+
