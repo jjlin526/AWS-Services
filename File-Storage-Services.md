@@ -90,3 +90,13 @@
 
 * Block storage designed to be connected to a single EC2 instance that can scale to support petabytes of data and support multiple volume types based on need.
 
+### Amazon EBS
+
+* Enables redundancy within an AZ (durability)
+* Allows users to take snapshots of data (data on a drive attached to EC2 instance can periodically be backed up)
+* Offers encryption of its volumes (does not encrypt by default)
+* Provides multiple volume types:
+   * General purpose SSD
+   * Provisioned IOPS SSD
+   * Throughput optimized HDD
+   * Cold HDD
