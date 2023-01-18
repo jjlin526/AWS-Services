@@ -50,9 +50,26 @@
 ### Amazon S3 Glacier
 
 * Designed for archiving of data within S3 as separate storage classes
-* Offers configurable retrieval times (based on price)
+* Offers configurable retrieval times (higher cost to retrieve faster)
 * Can send files directly or through lifecycle rules in S3 (i.e. to transition data into S3 Glacier)
 * Provides two different storage classes
    * S3 Glacier
    * S3 Glacier Deep Archive
 
+### Amazon S3 Glacier Storage Classes
+
+### S3 Glacier  
+
+* Designed for archival data
+* 90 day minimum storage duration change
+* Can be retrieved in either minutes or hours
+* You pay a retrieval fee per GB retrieved (in addition to storage cost, pay to retrieve it)
+* Over 5 times less expensive than S3 Standard storage class (compelling reason to utilize it if data will not be accessed except for rare circumstances)
+
+### S3 Glacier Deep Archive
+
+* Designed for archival data
+* 180 day minimum storage duration change
+* Can be retrieved in hours
+* You pay a retrieval fee per GB retrieved
+* Over 23 times less expensive than S3 Standard storage class
