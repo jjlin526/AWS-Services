@@ -37,3 +37,12 @@
 ### S3 Transfer Acceleration
 
 * Feature that can be enabled per bucket that allows for optimized uploading of data using the AWS Edge Locations are part of Amazon CloudFront -- (upload data in a fast and efficient way into S3 buckets)
+
+### Hosting a Website on Amazon S3
+
+* Create a new S3 bucket
+* Upload objects to an S3 bucket
+* Access objects from S3 bucket from URL
+* Configure a bucket for website hosting
+
+
