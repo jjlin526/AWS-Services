@@ -121,3 +121,11 @@
 ![image](https://user-images.githubusercontent.com/114364831/213291495-205232f8-1015-4aa7-be25-d1ab17a6ec59.png)
 
 * EFS has the ability to be a network file system that attaches to multiple EC2 instances at the same time (EBS can only attach to a single EC2 instance) -- EFS has a mount point within each AZ
+
+### Amazon FSx for Windows File Server
+
+* Fully managed native Windows file system (as opposed to Linux file system with EFS)
+* Includes native Windows features including:
+   * SMB support (allows devices to access and share files and resources over the network using the SMB protocol)
+   * Active Directory integration (a directory service that authenticates and authorizes all users and computers in a Windows domain type network, and it is an integral part of the Windows operating system)
+   * Windows NFTS (New Technology File System -- a file system that is used by the Windows operating system to store and manage files. It provides advanced features such as file and folder permissions, encryption, and disk quotas)
