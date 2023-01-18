@@ -45,4 +45,14 @@
 * Access objects from S3 bucket from URL
 * Configure a bucket for website hosting
 
+### Glacier and Glacier Deep Archive
+
+### Amazon S3 Glacier
+
+* Designed for archiving of data within S3 as separate storage classes
+* Offers configurable retrieval times (based on price)
+* Can send files directly or through lifecycle rules in S3 (i.e. to transition data into S3 Glacier)
+* Provides two different storage classes
+   * S3 Glacier
+   * S3 Glacier Deep Archive
 
