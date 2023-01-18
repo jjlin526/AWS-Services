@@ -26,3 +26,10 @@
 * Automatically move files based on access
 * Moves between frequent and infrequent access
 * Same performance as S3-Stanard (can provide cost savings if you have some data that needs to be moved between storage classes)
+
+### S3 Lifecycle Policies
+
+* Objects in a bucket can transition or expire based on your criteria (cannot move an object back on forth based on usage -- only available with **Intelligent Tiering**)
+* Transitions can enable objects to move to another storage based on time (i.e. can configure a certain file to last for 30 days based on **Lifecycle Policies**)
+* Expiration can delete objects based on age 
+* Policies can also factor in versions of a specific object in the bucket (i.e. can delete a version of the file that is not the current version after 7 days)
