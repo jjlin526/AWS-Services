@@ -71,3 +71,6 @@
 * Serverless applications
 * Implementations where low latency is key (get responses quickly from the database)
 * Data models without **BLOB storage** (**Binary Large Object** -- big bits of binary data within your database schema)
+
+### Amazon Elasticache and Redshift  
+
