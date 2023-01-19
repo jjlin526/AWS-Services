@@ -30,3 +30,13 @@
 * Some platforms support read replicas (scale out your data)
 * Launches into a VPC
 * Provides both general purpose SSD and provisioned IOPS SSD drive options
+
+### Amazon RDS Platforms
+
+* MySQL
+* PostgreSQL
+* MariaDB
+* Oracle Database
+* SQL Server
+* Amazon Aurora (created in the beginning to work on RDS)
+
