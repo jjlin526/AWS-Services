@@ -85,3 +85,13 @@
   * Session storage
 
 ![image](https://user-images.githubusercontent.com/114364831/213570683-ccde86a1-8b7a-44e6-b438-7f2c7d957ed8.png)
+
+### Amazon Redshift
+
+* Scalable data warehouse service (i.e. for user behavior data or analytics data)
+* Supports petabyte scale warehousing of data
+* Leverages high performance disks and columnar storage (beats a lot of traditional data warehousing solutions because it was designed with the cloud in mind)
+* Offers the ability to fully encrypt contents
+* Provides isolation with a VPC
+* Enables querying of exabytes of data in Amazon S3 using **Redshift Spectrum**
+
