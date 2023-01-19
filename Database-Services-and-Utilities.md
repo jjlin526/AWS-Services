@@ -64,3 +64,10 @@
 ### Scale of DynamoDB
 
 * DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 millions requests per second.
+
+### DynamoDB Use Cases  
+
+* Scale without excessive maintenance (do not need to manage underlying infrastructure or database layer)
+* Serverless applications
+* Implementations where low latency is key (get responses quickly from the database)
+* Data models without **BLOB storage** (**Binary Large Object** -- big bits of binary data within your database schema)
