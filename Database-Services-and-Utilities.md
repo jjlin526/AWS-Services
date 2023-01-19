@@ -74,3 +74,14 @@
 
 ### Amazon Elasticache and Redshift  
 
+### Amazon Elasticache
+
+* Fully managed in-memory data stores
+* Supports Memcached and Redis
+* Provides low latency in response times
+* Enables scaling and replicas to meet application demand
+* Handles common use cases including:
+  * Database layer caching
+  * Session storage
+
+![image](https://user-images.githubusercontent.com/114364831/213570683-ccde86a1-8b7a-44e6-b438-7f2c7d957ed8.png)
