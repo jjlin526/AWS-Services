@@ -11,3 +11,12 @@
 * If you are a DevOps engineer that wants complete control over OS that database is running on, can use EC2 directly
 * If want control over database but not control over underlying infrastructure -- leverage Relational Database Service (RDS)
 * SaaS approaches such DynamoDB, Elasticache and Redshift
+
+### Overview
+
+* Review the cloud computing models for databases on AWS
+* Introduce the Relational Database Service (RDS)
+* Examine the capabilities of Amazon Aurora (option within RDS)
+* Introduce the DynamoDB service
+* Review the Elasticache service
+* Examine data warehousing of data on AWS
