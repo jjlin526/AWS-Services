@@ -20,3 +20,13 @@
 * Introduce the DynamoDB service
 * Review the Elasticache service
 * Examine data warehousing of data on AWS
+
+### Amazon Relational Database Service
+
+* Takes a PaaS approach to running databases that we can leverage within our apps that are running on the platform
+* Fully managed service for relational databases
+* Handles provisioning, patching, backup, and recovery of your database (requires fair amount of time to implement and a lot of automation to integrate it in without the service)
+* Supports deployment across multiple availability zones (multi-AZ)
+* Some platforms support read replicas (scale out your data)
+* Launches into a VPC
+* Provides both general purpose SSD and provisioned IOPS SSD drive options
