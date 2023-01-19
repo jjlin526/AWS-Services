@@ -50,3 +50,5 @@
 * Supports both one time and continual migration of data
 * Supports many popular commercial and open source databases
 * Only pay for compute leveraged in the migration process
+
+### Amazon DynamoDB 
