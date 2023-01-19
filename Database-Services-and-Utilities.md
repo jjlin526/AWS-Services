@@ -44,3 +44,9 @@
 
 * Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases
 
+### Amazon Database Migration Service (DMS)
+
+* Enables you to move data into AWS from existing databases
+* Supports both one time and continual migration of data
+* Supports many popular commercial and open source databases
+* Only pay for compute leveraged in the migration process
