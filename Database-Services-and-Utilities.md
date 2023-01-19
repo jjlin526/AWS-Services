@@ -60,3 +60,7 @@
 * Offers **in-memory cache** with the **DynamoDB Accelerator (DAX)**
   * An in-memory cache is a way to temporarily store frequently accessed data in memory, rather than fetching it from the database each time it is needed. This can significantly improve performance by reducing the number of database queries and the latency of each query. The cache is typically implemented using a data structure such as a hash table or a linked list, and it is usually managed by a caching library or framework. The cache is usually implemented on the application side.
   * DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement. DAX read and write requests are fully compatible with DynamoDB, so you can use your existing DynamoDB API calls with DAX.
+
+### Scale of DynamoDB
+
+* DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 millions requests per second.
