@@ -44,4 +44,17 @@ SNS is a messaging service that allows for decoupling of applications and can be
 * Enables orchestration of workflows through a fully managed service
 * Supports serverless architecture (minimal infrastructure)
 * Can support complex workflows including error handling
-* Charged per **state transition** along with the other AWS services used
+* Charged per **state transition** along with the other AWS services used (i.e. charged from each transition from one step to another and then the lambda services used)
+* Workflows are defined using **Amazon States Language**
+
+![image](https://user-images.githubusercontent.com/114364831/213812513-b4cbcda6-0ac4-40fc-a3d0-cb2e029e4eea.png)
+
+### AWS Step Function Integrations
+
+* Build complex workflows; Amazon manages state of different steps within workflow
+* Compute services (lambda)
+* Database services (DynamoDB)
+* Messaging services (SQS, SNS)
+* Data processing services
+* Machine learning services
+
