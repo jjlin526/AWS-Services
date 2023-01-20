@@ -20,3 +20,37 @@ An AWS SAM template file closely follows the format of an AWS CloudFormation tem
 * **Resources section**. In AWS SAM templates the `Resources` section can contain a combination of AWS CloudFormation resources and AWS SAM resources.
 * **Parameters section**. Objects that are declared in the `Parameters` section cause the `sam deploy --guided` command to present additional prompts to the user. 
    * These prompts allow the user to customize certain aspects of the application, such as environment variables or resource configurations, before deploying it. Essentially, parameters allow for dynamic input to be provided to the application at runtime.
+
+All other sections of an AWS SAM template file correspond to the AWS CloudFormation template file section of the same name.
+
+### YAML
+
+The following example shows a YAML-formatted template fragment.
+
+```yaml
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  set of globals
+
+Description:
+  String
+
+Metadata:
+  template metadata
+
+Parameters:
+  set of parameters
+
+Mappings:
+  set of mappings
+
+Conditions:
+  set of conditions
+
+Resources:
+  set of resources
+
+Outputs:
+  set of outputs
+```
