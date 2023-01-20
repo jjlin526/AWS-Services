@@ -95,3 +95,17 @@
 * Provides isolation with a VPC
 * Enables querying of exabytes of data in Amazon S3 using **Redshift Spectrum**
 
+### Summary
+
+* Reviewed the cloud computing models for databases on AWS (IaaS, SaaS, PaaS)
+* Introduced the Relational Database Service (RDS)
+* Examined the capabilities of Amazon Aurora
+* Introduced the DynamoDB service (completely managed NoSQL database)
+* Reviewed the Elasticache service
+* Examined data warehousing of data on AWS (RedShift)
+
+### Scenario-based review
+
+-Snowball
+-RDS
+-DynamoDB SSD IOPS
