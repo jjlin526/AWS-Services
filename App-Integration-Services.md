@@ -58,3 +58,24 @@ SNS is a messaging service that allows for decoupling of applications and can be
 * Data processing services
 * Machine learning services
 
+### Summary
+
+* Introduced Amazon Simple Notification Service (SNS) (enables publish messages to a topic or subscribe to get messages from a topic)
+* Introduce Amazon Simple Queue Service (SQS) (mailbox - can put messages in and will remain there for 14 days; fault tolerant apps)
+* Explored architectures leveraging SNS and SQS
+* Examined AWS Step Functions
+* Reviewed sample AWS Step Function usage
+
+### Scenario-based Review
+
+### Scenario 1
+
+-SQS
+
+### Scenario 2
+
+-Step Functions
+
+### Scenario 3
+
+-SNS
