@@ -70,12 +70,18 @@ SNS is a messaging service that allows for decoupling of applications and can be
 
 ### Scenario 1
 
--SQS
+Ruth started a non-profit that assigns volunteers to opportunities. Recently their database server went down and users were unable to signup. While the situation is better, there is still some downtime expected in the future. She wants to explore an AWS service that could prevent lost user signups. What service would you recommend to Ruth?
+
+* **Simple Queue Service (SQS)** 
 
 ### Scenario 2
 
--Step Functions
+Jessi created a list of onboarding steps for new customers for their new app. These steps detail integrations with their CRM, emails to the user, and analytics. Jessi is worried about the time it will take to build all of this from scratch. Is there an AWS service that can help with this approach?
+
+* **AWS Step Functions** (integrate all steps into a workflow with Step Functions)
 
 ### Scenario 3
 
--SNS
+Roger's company is an eCommerce comapny building a custom platform. They are still adding new functionality. He wants aspects of the platform to listen for events like orders and refunds. They don't yet know all of the elements that would need to respond to events. Is there a service that would allow current and future parts of the platform to listen for these events?
+
+* **Simple Notification Service (SNS)** (certain parts of the platform could listen for order events, and other parts of the platform could listen for refund events)
