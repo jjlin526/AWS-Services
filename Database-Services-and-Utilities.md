@@ -106,6 +106,20 @@
 
 ### Scenario-based review
 
--Snowball
--RDS
--DynamoDB SSD IOPS
+### Scenario 1
+
+Jennifer is an IT executive in a financial services company. They are transitioning their data warehouse to AWS for analysis. The data warehouse would need to support up to 2 PB of data. Which approach would you recommend for Jennier?
+
+* **Amazon RedShift** (exabytes of data would require **RedShift Spectrum** -- RedShift supports petabyte-scale data)
+
+### Scenario 2
+
+Sam is a DevOps engineer at a tech company. Sam needs to launch a MySQL database for a new web application. They need to have direct access to the virtual server that MySQL is running on. What approach would you recommend for Sam's company?
+
+* **EC2** (IaaS option that takes MySQL and installs it on an EC2 instance) -- **Note:** RDS does not allow Sam to manage the underlying infrastructure but would otherwise be a good option
+
+### Scenario 3
+
+Frank is the CTO at a gaming company. They are trying to determine how to store realtime user analytics. They need low latency and the ability to scale to handle up to 1 million players. Frank wants to minimize the amount of time it takes to maintain the DB. Which AWS approach would you recommend for Frank?
+
+* **DynamoDB** (can handle scale and low latency requirement)
