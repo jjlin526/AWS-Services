@@ -9,3 +9,13 @@
 * Exploring architectures leveraging SNS and SQS
 * Examining AWS Step Functions
 * Reviewing sample AWS Step Function usage
+
+### AWS Messaging Services
+
+### Amazon Simple Notification Service (SNS)
+
+* Fully managed pub/sub messaging service (publish/subscribe -- i.e. public messages about new orders and subscribe to new orders or order refunds, etc.)
+* Enables you to create decoupled applications 
+* Organized according to topics
+* Integrates with multiple AWS services
+* Provides end user notifications across SMS, email, and push notifications
