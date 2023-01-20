@@ -32,3 +32,9 @@
 * Provides two types of queues:
     * Standard queue (does not guarantee order of items pulled off queue)
     * FIFO queue (first in first out)
+
+### Example Amazon SNS and SQS Architecture
+
+![image](https://user-images.githubusercontent.com/114364831/213790868-b983041b-54c7-4ffe-89c1-db747821b7e7.png)
+
+SNS is a messaging service that allows for decoupling of applications and can be used for notifications, triggering lambdas, sending SMS and Email messages, and fan-out delivery to multiple endpoints. SQS is a message queuing service that enables decoupling of application components and can be used for building distributed applications, sending messages between microservices and storing logs. Analytics Ingestion Service is a service that helps to collect, transform and load data into a centralized data store, it allows for easy ingestion and processing of large volumes of data from various sources into data lake or data warehouse, which can be used for data warehousing or Business Intelligence.
