@@ -19,3 +19,8 @@
 * Organized according to topics
 * Integrates with multiple AWS services
 * Provides end user notifications across SMS, email, and push notifications
+
+### Example Amazon SNS Architecture (for a SaaS company)
+
+![image](https://user-images.githubusercontent.com/114364831/213788328-4a8ff274-9ba9-44f0-83df-238740a5fba8.png)
+
