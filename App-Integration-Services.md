@@ -24,3 +24,11 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/213788328-4a8ff274-9ba9-44f0-83df-238740a5fba8.png)
 
+### Amazon Simple Queue Service (SQS)
+* Fully managed message queue service
+* Enables you to build decoupled and fault tolerant applications
+* Supports up to 256 KB data payload (for a message)
+* Allows messages to be stored up to 14 days
+* Provides two types of queues:
+    * Standard queue (does not guarantee order of items pulled off queue)
+    * FIFO queue (first in first out)
