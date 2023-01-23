@@ -52,3 +52,7 @@
 * All code you deployed onto cloud infrastructure (code you upload)
 * Patching guest operating system and custom applications
   * Whereas the host operating system is software installed on a computer to interact with the hardware, the guest operating system is software installed onto and running on the virtual machine
+
+### AWS Well-architected Framework  
+
+* The Well-architected Framework is a collection of best practices across five key pillars for how to best create systems that create business value on AWS
