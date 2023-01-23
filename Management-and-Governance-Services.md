@@ -50,5 +50,11 @@
 
 * AWS Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations
 
+### AWS Config
 
+* Provides configuration history for infrastructure
+* Works against rules that you can customize or even create your own custom validations
+* Includes conformance packs for compliance standards including PCI-DSS
+* Can work with AWS Organizations for both cross-region and cross-account setup
+* Provides remediation steps for infrastructure not meeting criteria
 
