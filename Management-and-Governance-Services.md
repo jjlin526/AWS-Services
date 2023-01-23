@@ -72,3 +72,12 @@
 ### AWS CloudFormation
 
 * Custom app requires 2 S3 buckets, 5 EC2 servers, 2 SQS queues and 3 lambda functions... could set it up all in the console. Lot of manual steps - what happens if we miss one or incorrectly apply settings to a resource? CloudFormation exists to solve this problem
+
+### Overview of AWS CloudFormation
+
+* Managed service for provisioning infrastructure based on templates
+* No additional charge
+* Templates can be YAML or JSON
+* Enables infrastructure as code
+* Manages dependencies between resources
+* Provides drift detection to find changes in your infrastructure
