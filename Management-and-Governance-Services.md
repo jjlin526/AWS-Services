@@ -29,3 +29,7 @@
 * Forensic analysis (data breach -- what actions were taken against infrastructure)
 * Operational analysis (who potentially changed infrastructure that caused a crash or outage)
 * Troubleshooting (when a specific bad configuration was injected into the system and use that to fix any issues within infrastructure)
+
+### Managing Infrastructure
+
+![image](https://user-images.githubusercontent.com/114364831/214063539-b01614ed-bb49-45b7-b21e-1f942d9c9811.png)
