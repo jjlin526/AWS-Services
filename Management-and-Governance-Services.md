@@ -33,3 +33,9 @@
 ### Managing Infrastructure
 
 ![image](https://user-images.githubusercontent.com/114364831/214063539-b01614ed-bb49-45b7-b21e-1f942d9c9811.png)
+
+* Monitoring and management service
+* Collects logs, metrics, and events from most AWS services (metric -- i.e. number of users visiting a load balancer; first class citizen: most AWS services integrate with CloudWatch by default)
+* Enables alarms based on metrics (CloudWatch will let you know if something is down or not performing as it should; do not need to find it yourself or have customers tell you)
+* Provides visualization capabilities for metrics (chart of metric over time)
+* Allows for custom dashboards based on collected metrics
