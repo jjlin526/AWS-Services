@@ -23,3 +23,9 @@
 * As a best practice, it should be enabled on every AWS account
 * Can be consolidated into an Organizational trail using AWS Organizations
 
+### AWS CloudTrail Use Cases
+
+* Compliance requirement
+* Forensic analysis (data breach -- what actions were taken against infrastructure)
+* Operational analysis (who potentially changed infrastructure that caused a crash or outage)
+* Troubleshooting (when a specific bad configuration was injected into the system and use that to fix any issues within infrastructure)
