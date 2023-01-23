@@ -34,3 +34,7 @@
 ![image](https://user-images.githubusercontent.com/114364831/214152148-cc913f6a-d5b1-48dc-b8b2-5256d1648876.png)
 
 * Note that an IAM identity is just a user, group or role
+
+### Example Policy written as JSON Object
+
+![image](https://user-images.githubusercontent.com/114364831/214152751-77a94911-1ee2-4a04-9520-72377c50697b.png)
