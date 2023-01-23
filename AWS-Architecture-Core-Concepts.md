@@ -61,3 +61,6 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214117366-f5bcb0f6-9472-4856-92d8-6126e9c93c99.png)
 
+### High-availability and Fault Tolerance
+
+* Fall under the reliability pillar of the Well-architected Framework
