@@ -61,3 +61,10 @@
 ### AWS Systems Manager
 
 * AWS Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources
+
+### Overview of Systems Manager
+
+* Provides multiple tools that make it easier to manage your AWS infrastructure
+* Enables automation tasks for common maintenance actions (two apps in AWS account, 10 servers that support one app and 10 servers that support another; want to update EC2 instances for first app with new version of a library; can write action one time and send it out to all servers that need to receive it; can choose to have it update on those servers but not on the other servers)
+* Gives a secure way to access servers using only AWS credentials (do not have to deal with separate keys or passwords)
+* Stores commonly used parameters securely for operational use (have database password and do not want to store that with each app, but want each app to have access to the password when they launch -- can use Systems Manager)
