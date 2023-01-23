@@ -56,3 +56,8 @@
 ### AWS Well-architected Framework  
 
 * The Well-architected Framework is a collection of best practices across five key pillars for how to best create systems that create business value on AWS
+
+### Pillars of the Well-architected Framework
+
+![image](https://user-images.githubusercontent.com/114364831/214117366-f5bcb0f6-9472-4856-92d8-6126e9c93c99.png)
+
