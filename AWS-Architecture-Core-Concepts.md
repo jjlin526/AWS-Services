@@ -105,6 +105,7 @@
 
 ### Scenario-based Review  
 
-* Artifact
-* Encryption
-* 
+* AWS Artifact
+* AWS Shared Responsibility Model
+* AWS Well-architected Framework
+
