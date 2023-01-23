@@ -18,3 +18,8 @@
 * Hosting or distributing harmful content is prohibited (viruses, malware, etc.)
 * Penetration tests are allowed for a list of specific services (look for holes in security -- i.e. what ports are open on a specific server)
 
+### Least Privilege Access
+
+* When granting permissions for a user to access AWS resources, you should grant them the minimum permissions needed to complete their tasks and no more
+  * Do not use root account by default - set up IAM account on daily basis (example of least privilege access)
+
