@@ -71,3 +71,11 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214119855-4799588d-2fe7-4d5d-86c3-ee813b1bd809.png)
 
+### Building SOlutions on AWS
+
+* Most managed AWS services provide high-availability out of the box (limits amount needed to build; store data using S3 Standard storage class within S3; stored across multiple AZ's - baked into service)
+* When building solutions directly on EC2, fault tolerance must be architected (cloud deployment models -- solutions that are IaaS must consider fault tolerance; built into custom solutions)
+* Multiple availability zones should be leveraged
+* Some services can enable fault tolerance in your custom applications 
+  * Simple QUeue Service (can build queues so that data or events that need to be processed can be held in the queue until they are ready to be processed; anything downstream going offline will still result in a functional app)
+  * Route 53 (detect unhealthy endpoints and route users to the right services that are available)
