@@ -79,3 +79,9 @@
 * Some services can enable fault tolerance in your custom applications 
   * Simple QUeue Service (can build queues so that data or events that need to be processed can be held in the queue until they are ready to be processed; anything downstream going offline will still result in a functional app)
   * Route 53 (detect unhealthy endpoints and route users to the right services that are available)
+
+### Compliance
+
+### Common Compliance Standards
+
+![image](https://user-images.githubusercontent.com/114364831/214122612-48444728-8a4b-4b95-a613-ab9c3cd09e1b.png)
