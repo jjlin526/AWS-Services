@@ -89,3 +89,9 @@
 ### Compliance Services
 
 ![image](https://user-images.githubusercontent.com/114364831/214123195-dd024cba-ff87-4fd0-b856-eef1536e1bdc.png)
+
+### Demo  
+
+* Examining compliance reports in AWS Artifact
+* Exploring conformance packs in AWS Config
+
