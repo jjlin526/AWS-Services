@@ -42,3 +42,12 @@
 ### AWS IAM Best Practices
 
 ![image](https://user-images.githubusercontent.com/114364831/214152975-b0c4ffd9-e45a-4a63-9179-2eee720b6e85.png)
+
+### Demo
+
+* Create an IAM user
+* Configure permissions for IAM users
+* Create an IAM group
+* Attach permissions to an IAM group
+
+
