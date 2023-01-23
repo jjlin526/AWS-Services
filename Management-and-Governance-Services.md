@@ -81,3 +81,11 @@
 * Enables infrastructure as code (write a template that every resource on team can use to launch infrastructure -- remove manual processes)
 * Manages dependencies between resources (i.e. require one resource to be in place before launching another one; these dependencies are managed)
 * Provides drift detection to find changes in your infrastructure (i.e. someone changes S3 permission to be globally available; change will be noticed)
+
+### Example CloudFormation YAML
+
+* The code above if placed within a full CloudFormation template would create a single S3 bucket
+
+![image](https://user-images.githubusercontent.com/114364831/214078335-3bc157d6-6df2-498e-bed7-4e39677d704e.png)
+
+* Can have an environment for testing and one for production and ensure both are the same because of template using CloudFormation
