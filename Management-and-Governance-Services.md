@@ -58,3 +58,6 @@
 * Can work with AWS Organizations for both cross-region and cross-account setup
 * Provides remediation steps for infrastructure not meeting criteria
 
+### AWS Systems Manager
+
+* AWS Systems Manager provides a unified user interface so you can view operational data from multiple AWS services and allows you to automate operational tasks across your AWS resources
