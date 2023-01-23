@@ -89,3 +89,13 @@
 ![image](https://user-images.githubusercontent.com/114364831/214078335-3bc157d6-6df2-498e-bed7-4e39677d704e.png)
 
 * Can have an environment for testing and one for production and ensure both are the same because of template using CloudFormation
+
+### AWS OpsWorks
+
+* Configuration management service
+* Provides managed instances of Chef and Puppet
+    * Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers
+* Configuration is defined as code for servers
+* Chef and Puppet manage the lifecycle of these configuration changes with servers
+* Works in a hybrid cloud architecture for both cloud-based and on-premise servers
+
