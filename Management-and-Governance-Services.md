@@ -99,3 +99,10 @@
 * Chef and Puppet manage the lifecycle of these configuration changes with servers
 * Works in a hybrid cloud architecture for both cloud-based and on-premise servers
 
+### AWS OpsWorks Services
+
+### AWS OpsWorks Services
+
+![image](https://user-images.githubusercontent.com/114364831/214081062-e34d1810-02f5-4c67-b69c-5f95bbba7dc0.png)
+
+* OpsWorks Stack allows you to define app in layers and manage that using Chef Recipes with Chef Solo
