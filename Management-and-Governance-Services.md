@@ -75,9 +75,9 @@
 
 ### Overview of AWS CloudFormation
 
-* Managed service for provisioning infrastructure based on templates
-* No additional charge
+* Managed service for provisioning infrastructure based on templates (no need to manually clicking in console or writing custom CLI script or using SDK to write custom logic for creating infrastructure)
+* No additional charge (only pay for resources launched, service itself has no charge)
 * Templates can be YAML or JSON
-* Enables infrastructure as code
-* Manages dependencies between resources
-* Provides drift detection to find changes in your infrastructure
+* Enables infrastructure as code (write a template that every resource on team can use to launch infrastructure -- remove manual processes)
+* Manages dependencies between resources (i.e. require one resource to be in place before launching another one; these dependencies are managed)
+* Provides drift detection to find changes in your infrastructure (i.e. someone changes S3 permission to be globally available; change will be noticed)
