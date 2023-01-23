@@ -119,3 +119,10 @@ AWS collected the best practices for multi-account setup under a service called 
 
 * A service to create a multi-account environment on AWS that follows the recommended best practices in operational efficiency, security and governance
      * AWS Control Tower creates an abstraction or orchestration layer that combines and integrates the capabilities of several other AWS services, including AWS Organizations, AWS Single Sign-on, and AWS Service Catalog.
+
+### AWS Control Tower
+
+* Centralizes users across all AWS accounts (minimizes effort needed to create users across multiple accounts)
+* Provides a way to create new AWS accounts based on templates (ensure every AWS account that is created within finance department has specific settings)
+* Integrates GuardRails for accounts (protection for accounts under master account; ensure CloudTrail does not get turned off in any child account -- example GuardRail that can be included)
+* Includes a dashboard to gain operational insights from a single view (across all accounts)
