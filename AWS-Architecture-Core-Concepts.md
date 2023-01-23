@@ -69,5 +69,5 @@
 
 ### Reliability on AWS
 
-![image](https://user-images.githubusercontent.com/114364831/214119307-64e4da87-0be0-40df-b0f1-5b830bc2d60b.png)
+![image](https://user-images.githubusercontent.com/114364831/214119855-4799588d-2fe7-4d5d-86c3-ee813b1bd809.png)
 
