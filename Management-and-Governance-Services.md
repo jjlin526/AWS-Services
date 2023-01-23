@@ -139,6 +139,19 @@ AWS collected the best practices for multi-account setup under a service called 
 ### Scenario-based Review
 
 ### Scenario 1
-* Config
-* CloudFormation (launching dev prod and testing environments)
-* CloudTrail 
+
+Elliot is an operations engineer at a financial services company. He recently discovered that someone had disabled a security setting on a server. He is concerned that events like this might go unnoticed until a breach. Which service would allow the organization to continually track configuration of infrastructure?
+
+* **AWS Config** (set of rules enabled on Config to check for settings)
+
+### Scenario 2
+
+James is the lead architect at a SaaS company. They will be launching a new application (in dev prod and testing environments) that includes several components. He is looking to minimize manual work required when creating infrastructure. What service would enable James to automate much of this effort?
+
+* **AWS CloudFormation** (create templates launched with CloudFormation which would manage the infrastructure)
+
+### Scenario 3
+
+Candace is the CTO at a manufacturing company. A cloud server needed to support their manufacturing process was deleted. They want to make sure they follow up with the person who deleted this instance. Which service could show the individual who deleted this specific server?
+
+* **AWS CloudTrail** (provides an audit trail of actions performed on AWS, irrespective of it was performed on the console, CLIs, or SDKs)
