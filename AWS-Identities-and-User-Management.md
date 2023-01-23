@@ -55,4 +55,6 @@
 * Enable MFA for the root user
 * Enable MFA for the IAM user
 
+### Amazon Cognito   
 
+* A managed service that enables you to handle authentication and aspects of authorization for your custom web and mobile applications through AWS.
