@@ -106,3 +106,11 @@
 ![image](https://user-images.githubusercontent.com/114364831/214081062-e34d1810-02f5-4c67-b69c-5f95bbba7dc0.png)
 
 * OpsWorks Stack allows you to define app in layers and manage that using Chef Recipes with Chef Solo
+
+### AWS Organizations
+
+* Allows organizations to manage multiple accounts under a single master account
+* Provides organizations with the ability to leverage Consolidated Billing for all accounts
+* Enables organizations to centralize logging and security standards across accounts
+
+AWS collected the best practices for multi-account setup under a service called **Control Tower**.
