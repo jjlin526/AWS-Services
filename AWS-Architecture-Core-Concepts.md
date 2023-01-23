@@ -63,4 +63,11 @@
 
 ### High-availability and Fault Tolerance
 
+"Everything fails all the time"
+
 * Fall under the reliability pillar of the Well-architected Framework
+
+### Reliability on AWS
+
+![image](https://user-images.githubusercontent.com/114364831/214119307-64e4da87-0be0-40df-b0f1-5b830bc2d60b.png)
+
