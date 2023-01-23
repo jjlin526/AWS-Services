@@ -39,3 +39,9 @@
 * Enables alarms based on metrics (CloudWatch will let you know if something is down or not performing as it should; do not need to find it yourself or have customers tell you)
 * Provides visualization capabilities for metrics (chart of metric over time)
 * Allows for custom dashboards based on collected metrics
+
+### Sample CloudWatch dashboard
+
+![image](https://user-images.githubusercontent.com/114364831/214068630-472030f3-6c6f-442a-a6cd-c0b0562cbd7f.png)
+
+
