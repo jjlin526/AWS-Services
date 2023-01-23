@@ -40,8 +40,15 @@
 * Provides visualization capabilities for metrics (chart of metric over time)
 * Allows for custom dashboards based on collected metrics
 
-### Sample CloudWatch dashboard
+### Sample CloudWatch Dashboard
 
 ![image](https://user-images.githubusercontent.com/114364831/214068630-472030f3-6c6f-442a-a6cd-c0b0562cbd7f.png)
+
+* CPU utilization on EC2 server, network traffic, EBS activity
+
+### AWS Config Definition
+
+* AWS Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations
+
 
 
