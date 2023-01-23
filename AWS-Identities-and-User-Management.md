@@ -38,3 +38,7 @@
 ### Example Policy written as JSON Object
 
 ![image](https://user-images.githubusercontent.com/114364831/214152751-77a94911-1ee2-4a04-9520-72377c50697b.png)
+
+### AWS IAM Best Practices
+
+![image](https://user-images.githubusercontent.com/114364831/214152975-b0c4ffd9-e45a-4a63-9179-2eee720b6e85.png)
