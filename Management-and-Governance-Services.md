@@ -138,6 +138,7 @@ AWS collected the best practices for multi-account setup under a service called 
 
 ### Scenario-based Review
 
+### Scenario 1
 * Config
 * CloudFormation (launching dev prod and testing environments)
 * CloudTrail 
