@@ -33,3 +33,22 @@
 
 * AWS has the responsibility over the core systems that are running the platform
 * Customer has control over the things they are putting onto the platform and how they are using it
+
+### Shared Responsibility Model
+
+### AWS Responsibility
+
+* Access control and training for Amazon employees 
+* Global data centers and underlying network (AZ's and regions, and making sure connectivity exist between those)
+* Hardware for global infrastructure (replacing servers, switches, and networking gear)
+* Configuration management for infrastructure (how bits of data get from one location to another)
+* Patching cloud infrastructure and services (core servers or bare metal servers that are running virtual servers and servers running services used on AWS)
+
+### Customer Responsibility
+
+* Individual access to cloud resources and training (least privilege access to people in our company that need to access cloud resources; train them to use services on AWS)
+* Data security and encryption both in transit and at rest (i.e. if you put unencrypted in S3 it is bad; but should encrypt it at rest)
+* Operating system, network and firewall configurations (if you are using IaaS; EC2 virtual servers, you are responsible for the OS including patching; if you are configuring your own VPCs, you are responsible for the network configuration, access control lists and security groups)
+* All code you deployed onto cloud infrastructure (code you upload)
+* Patching guest operating system and custom applications
+  * Whereas the host operating system is software installed on a computer to interact with the hardware, the guest operating system is software installed onto and running on the virtual machine
