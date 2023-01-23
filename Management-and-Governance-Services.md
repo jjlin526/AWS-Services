@@ -126,3 +126,18 @@ AWS collected the best practices for multi-account setup under a service called 
 * Provides a way to create new AWS accounts based on templates (ensure every AWS account that is created within finance department has specific settings)
 * Integrates GuardRails for accounts (protection for accounts under master account; ensure CloudTrail does not get turned off in any child account -- example GuardRail that can be included)
 * Includes a dashboard to gain operational insights from a single view (across all accounts)
+
+### Summary
+
+* Reviewed the ecosystem of services that are provided for management
+* Examined how to create an audit trail with AWS CloudTrail
+* Explored how you track infrastructure with CloudWatch and Config
+* Introduced infrastructure automation with CloudFormation (Infrastructure as Code)
+* Looked at operational insights with Systems Manager
+* Reviewed AWS Organizations leveraging Control Tower
+
+### Scenario-based Review
+
+* Config
+* CloudFormation (launching dev prod and testing environments)
+* CloudTrail 
