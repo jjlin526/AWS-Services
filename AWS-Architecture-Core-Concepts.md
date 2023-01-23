@@ -27,3 +27,9 @@
 
 * Security and Compliance is a shared responsibility between AWS and the customer
 
+### Shared Responsibility Summary
+
+![image](https://user-images.githubusercontent.com/114364831/214102258-474efaf6-10e5-47ea-8dbe-4918cc5807f2.png)
+
+* AWS has the responsibility over the core systems that are running the platform
+* Customer has control over the things they are putting onto the platform and how they are using it
