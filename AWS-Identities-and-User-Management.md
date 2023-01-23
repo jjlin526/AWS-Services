@@ -28,3 +28,9 @@
 ![image](https://user-images.githubusercontent.com/114364831/214150754-82d6dff7-8ba3-4941-99de-bb7fe5fdfd15.png)
 
 * Roles; when you launch an EC2 server, there is an option to specify a role for that server such as access to an S3 bucket (part of web app on that server needs to upload photos to an S3 bucket) -- cannot do this by default, but can give the EC2 server a role with the permission to write to the S3 bucket
+
+### Policies in AWS IAM
+
+![image](https://user-images.githubusercontent.com/114364831/214152148-cc913f6a-d5b1-48dc-b8b2-5256d1648876.png)
+
+* Note that an IAM identity is just a user, group or role
