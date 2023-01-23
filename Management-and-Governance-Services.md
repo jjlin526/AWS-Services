@@ -114,3 +114,8 @@
 * Enables organizations to centralize logging and security standards across accounts
 
 AWS collected the best practices for multi-account setup under a service called **Control Tower**.
+
+### AWS Control Tower
+
+* A service to create a multi-account environment on AWS that follows the recommended best practices in operational efficiency, security and governance
+     * AWS Control Tower creates an abstraction or orchestration layer that combines and integrates the capabilities of several other AWS services, including AWS Organizations, AWS Single Sign-on, and AWS Service Catalog.
