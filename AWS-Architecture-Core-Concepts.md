@@ -23,3 +23,7 @@
 * When granting permissions for a user to access AWS resources, you should grant them the minimum permissions needed to complete their tasks and no more
   * Do not use root account by default - set up IAM account on daily basis (example of least privilege access)
 
+### Shared Responsibility Model
+
+* Security and Compliance is a shared responsibility between AWS and the customer
+
