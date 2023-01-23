@@ -15,3 +15,11 @@
 
 * With CloudTrail, you can log, continuously monitor, and retain account activity related to actions across your AWS infrastructure. CloudTrail provides event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools, and other AWS services.
 
+### More on CloudTrail
+
+* Inserts audit trail in an S3 bucket or into CloudWatch Logs
+* Logs events in the regions in which they occur
+* Meets many compliance requirements for infrastructure auditing
+* As a best practice, it should be enabled on every AWS account
+* Can be consolidated into an Organizational trail using AWS Organizations
+
