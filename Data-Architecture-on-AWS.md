@@ -54,7 +54,7 @@
 * Supports data in Amazon RDS, DynamoDB, Redshift, and S3
 * Supports a serverless model of execution (handles management of infrastructure for you)
 
-### Amazon EMR
+### Amazon Elastic MapReduce (EMR)
 
 * Enables big-data processing on Amazon EC2 and S3
 * Supports popular open-source frameworks and tools
@@ -64,3 +64,10 @@
 ### Supported Amazon EMR Frameworks
 
 ![image](https://user-images.githubusercontent.com/114364831/214430486-8d3878ef-e180-4dea-8dcb-c67f165441b5.png)
+
+### AWS Data Pipeline
+
+* Managed ETL (extract, transform, and load) service on AWS
+* Manages data workflow through AWS services
+* Supports S3, EMR, Redshift, DynamoDB, and RDS
+* Can integrate on-premise data stores
