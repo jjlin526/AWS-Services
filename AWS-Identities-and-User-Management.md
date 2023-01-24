@@ -66,3 +66,9 @@
 * Provides security capabilities to control account access
 * Enables controlled access to AWS resources (can configure access to specific pieces of AWS infrastructure that you would want a user to have access to without signing up for an IAM account)'
 * Can work with social and enterprise identity providers
+
+### Amazon Cognito Identity Providers
+
+![image](https://user-images.githubusercontent.com/114364831/214318166-d8a00bb1-83b0-4917-9dd3-1156afe239cb.png)
+
+* Let users login to custom app with Google and have that correspond to a Cognito identity
