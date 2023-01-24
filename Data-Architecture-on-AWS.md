@@ -34,3 +34,11 @@
 * **Tape Gateway**: This type of gateway allows you to use the cloud to store your tape backups. It creates virtual tapes in the cloud and uses them as the target for your tape backup processes, so you can store your data in the cloud instead of on physical tapes.
 
 * **Volume Gateway**: This type of gateway allows you to create cloud-based storage volumes that can be accessed by your local applications using iSCSI protocol. It allows you to store data in the cloud and access it as if it were on your own network, using the same tools and workflows you use for local storage.
+
+### AWS DataSync
+
+* Leverages the DataSync agent deployed as a VM on your network
+* Integrates with S3, EFS, and FSx for Windows File Server on AWS
+* Greatly improved speed of transfer due to custom protocol and optimizations
+* Charged per GB of data transferred
+
