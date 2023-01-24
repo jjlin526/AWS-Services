@@ -24,3 +24,13 @@
     * File Gateway
 
 * AWS Storage Gateway is a service offered by Amazon Web Services (AWS) that enables on-premises applications to store and retrieve data from AWS storage services, such as Amazon S3 and Amazon Glacier. It provides a seamless integration between on-premises storage infrastructure and the cloud, allowing customers to use the cost and scalability benefits of the cloud while still maintaining control and access to their data on-premises. This service can be used in various scenarios such as backup and archive, disaster recovery, and file sharing.
+
+### Gateway Types
+
+![image](https://user-images.githubusercontent.com/114364831/214376186-952470fc-bf1c-4b25-a0fd-7aed3ab632c7.png)
+
+* **File Gateway**: This type of gateway allows you to store files in Amazon S3 and access them quickly and easily as if they were stored on your own network. It provides a local cache, so the files are stored on S3 but can be accessed with low latency as if they were on your local network.
+
+* **Tape Gateway**: This type of gateway allows you to use the cloud to store your tape backups. It creates virtual tapes in the cloud and uses them as the target for your tape backup processes, so you can store your data in the cloud instead of on physical tapes.
+
+* **Volume Gateway**: This type of gateway allows you to create cloud-based storage volumes that can be accessed by your local applications using iSCSI protocol. It allows you to store data in the cloud and access it as if it were on your own network, using the same tools and workflows you use for local storage.
