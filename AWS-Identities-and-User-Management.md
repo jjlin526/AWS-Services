@@ -58,3 +58,11 @@
 ### Amazon Cognito   
 
 * A managed service that enables you to handle authentication and aspects of authorization for your custom web and mobile applications through AWS.
+
+### Overview of Amazon Cognito
+
+* User directory service for custom applications
+* Provides UI components for many platforms
+* Provides security capabilities to control account access
+* Enables controlled access to AWS resources (can configure access to specific pieces of AWS infrastructure that you would want a user to have access to without signing up for an IAM account)'
+* Can work with social and enterprise identity providers
