@@ -60,3 +60,7 @@
 * Supports popular open-source frameworks and tools
 * Operates in a clustered environment without additional configuration (on your own in Amazon EC2, lot of config to set up tools and operate in environments with more than one server that must work together)
 * Supports many different big-data use cases (supports many tools and has a clustered environment)
+
+### Supported Amazon EMR Frameworks
+
+![image](https://user-images.githubusercontent.com/114364831/214430486-8d3878ef-e180-4dea-8dcb-c67f165441b5.png)
