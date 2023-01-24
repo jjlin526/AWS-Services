@@ -53,3 +53,10 @@
 * Fully managed ETL (extract, transform and load) service on AWS
 * Supports data in Amazon RDS, DynamoDB, Redshift, and S3
 * Supports a serverless model of execution (handles management of infrastructure for you)
+
+### Amazon EMR
+
+* Enables big-data processing on Amazon EC2 and S3
+* Supports popular open-source frameworks and tools
+* Operates in a clustered environment without additional configuration (on your own in Amazon EC2, lot of config to set up tools and operate in environments with more than one server that must work together)
+* Supports many different big-data use cases (supports many tools and has a clustered environment)
