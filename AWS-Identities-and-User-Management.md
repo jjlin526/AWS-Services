@@ -72,3 +72,16 @@
 ![image](https://user-images.githubusercontent.com/114364831/214318166-d8a00bb1-83b0-4917-9dd3-1156afe239cb.png)
 
 * Let users login to custom app with Google and have that correspond to a Cognito identity
+
+### Summary
+
+* Introduced AWS Identity and Access Management (IAM)
+* Reviewed the IAM identity types (users, groups, roles)
+* Enabled Multi-Factor Authentication (MFA)
+* Introduced Amazon Cognito
+
+### Scenario-based Review
+
+* Groups
+* Policies
+* MFA
