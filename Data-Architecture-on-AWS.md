@@ -48,3 +48,8 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214418221-ba7f21cc-3c86-4c76-b2b7-ff9e4a2182ec.png)
 
+### AWS Glue
+
+* Fully managed ETL (extract, transform and load) service on AWS
+* Supports data in Amazon RDS, DynamoDB, Redshift, and S3
+* Supports a serverless model of execution (handles management of infrastructure for you)
