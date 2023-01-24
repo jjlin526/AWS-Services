@@ -82,6 +82,20 @@
 
 ### Scenario-based Review
 
-* Groups
-* Policies
-* MFA
+### Scenario 1
+
+Sylvia manages a team of DevOps engineers for her company. Each member of her team needs to have the same access to cloud systems. It is taking her a long time to attach permissions to each user for access. What approach would help Sylvia manage the team's permissions?
+
+* **Use an IAM Group for the team** (one location for setting permissions for every member of the team -- ensure least privilege access)
+
+### Scenario 2
+
+Edward works for a startup that is building a mapping visualization tool. Their EC2 servers need to access data stored within S3 buckets. Edward created a user in IAM for these servers and uploaded keys (access key and secret access key) to the server. Is Edward following best practices for this approach? If not, what should he do?
+
+* **Use an IAM Role with EC2** (roles are used to give services the permissions to work with other services in AWS in a secure way)
+
+### Scenario 3
+
+William is leading the effort to transition his organization to the cloud. His CIO is concerned about securing access to AWS with a password. He asks William to research approaches for additional security. What approach would you recommend to William for this additional security?
+
+* **Use Multi-factor Authentication** (built into AWS; relatively easy to implement; requires other token to login)
