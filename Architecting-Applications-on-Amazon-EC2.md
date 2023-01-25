@@ -63,3 +63,11 @@
 * Enables you to allow and deny traffic
 * Each VPC has a default ACL that allows all inbound and outbound traffic
 * Custom ACL's deny all traffic until rules are added
+
+### AWS VPN
+
+* Creates an encrypted tunnel into your VPC (may not even want VPC available to public internet; but still want access to manage servers within VPC)
+* Can be used to connect your data center or even individual client machines
+* Supported in two services:
+    * Site-to-site VPN
+    * Client VPN
