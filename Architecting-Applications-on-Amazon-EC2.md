@@ -185,6 +185,13 @@
 * Introduced developer tools on AWS (CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CodeStar)
 * Reviewed approaches for launching pre-defined solutions on Amazon EC2 (AWS Service Catalog, AWS Marketplace)
 
+### Scaling, Auto Scaling, and ELBs:
+
+* Scaling refers to the process of increasing or decreasing the number of resources (such as servers) that a system uses to handle its workload.
+* Horizontal scaling involves adding more resources to handle increased workloads, while vertical scaling involves increasing the capacity of existing resources.
+* Auto Scaling is a service that automatically adjusts the number of resources used by a system based on the workload, allowing it to scale up or down as needed.
+* ELBs (Elastic Load Balancers) are used to distribute incoming traffic across multiple resources, helping to ensure that the workload is distributed evenly and that the system can handle increased traffic.
+
 ### Scenario Based Review
 
 * Service Catalog
