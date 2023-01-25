@@ -13,3 +13,10 @@
 * Review the four different disaster recovery approaches on AWS
 * Explore the factors to know when selecting an approach
 * Examine specific scenarios and disaster recovery needs
+
+### Disaster Recovery Architectures
+
+### Disaster Recovery Scenarios
+
+![image](https://user-images.githubusercontent.com/114364831/214601099-4daf5d08-d767-4154-9de2-6f9ad66b8d21.png)
+
