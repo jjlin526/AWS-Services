@@ -52,3 +52,10 @@
 * Utilizes instance types needed for production not just recovery
 * Provides a near seamless recovery process
 * Incurs the most cost over the other approaches
+
+### Selecting a Disaster Recovery Architecture
+
+### Disaster Recovery Approach Considerations
+
+![image](https://user-images.githubusercontent.com/114364831/214620361-e8ad3fc5-e42f-4f13-806f-3e3e38a95f27.png)
+
