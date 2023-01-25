@@ -117,5 +117,10 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214686516-b59c8b7d-bda3-478a-872f-29ccea74d141.png)
 
+### AWS Service Catalog
 
+* Targeted to serve as an organizational service catalog for the cloud
+* Can include single server image to multi-tier custom applications (wide variety of infrastructure needs)
+* Enables organizations to leverage services that meet compliance (if your IT group has already constructed a specific way to launch a certain type of server and made sure it follows all organizational and industry best practices - others do not have to reinvent the wheel)
+* Supports a lifecycle for services released in the catalog (version 1, update it to version 1.1 - everyone using it would be notified that there is an update to the service they are using)
 
