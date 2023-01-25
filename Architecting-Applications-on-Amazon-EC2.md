@@ -144,3 +144,9 @@
 * AWS CodePipeline knows how to work with all other services mentioned previously to create a pipeline; enables us to look at whole process of building, testing and deploying apps
 * AWS CodeStar bootstraps entire process for custom apps
 
+### AWS CodeCommit
+
+* Managed source control service
+* Utilizes Git for repositories
+* Controls access with IAM policies (control access to this just like any other AWS resource)
+* Serves as an alternative to Github and Bitbucket
