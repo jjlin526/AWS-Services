@@ -124,3 +124,10 @@
 * Enables organizations to leverage services that meet compliance (if your IT group has already constructed a specific way to launch a certain type of server and made sure it follows all organizational and industry best practices - others do not have to reinvent the wheel)
 * Supports a lifecycle for services released in the catalog (version 1, update it to version 1.1 - everyone using it would be notified that there is an update to the service they are using)
 
+### AWS Marketplace
+
+* Geared at third-party vendors or Independent Software Vendors (ISV) who are going to publish their software for use on AWS
+* Curated catalog of third-party solutions for customers to run on AWS
+* Provides AMI's, CloudFormation stacks, and SaaS based solutions
+* Enables different pricing options to overcome licensing in the cloud (third-party vendors have licensing more tied to physical servers)
+* Charges appear on your AWS bill (some things are free and some have charges on top of AWS infrastructure costs)
