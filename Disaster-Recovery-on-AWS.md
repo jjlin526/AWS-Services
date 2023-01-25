@@ -59,3 +59,7 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214620361-e8ad3fc5-e42f-4f13-806f-3e3e38a95f27.png)
 
+### Recovery Time Objective (RTO)
+
+* The time it takes to get your systems back up and running to the ideal business state after a disaster recovery event
+
