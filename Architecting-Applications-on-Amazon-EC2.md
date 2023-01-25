@@ -40,3 +40,10 @@
 * Integrates natively with RDS, DocumentDB, and Redshift
 * Can auto-rotate credentials with integrated services
 * Enables fine-grained access control to secrets
+
+### Controlling Access to EC2 Instances
+
+### Security in Amazon VPC
+
+![image](https://user-images.githubusercontent.com/114364831/214650388-381ed90a-7b25-426c-ab87-2de122acb955.png)
+
