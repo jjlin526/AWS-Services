@@ -63,3 +63,6 @@
 
 * The time it takes to get your systems back up and running to the ideal business state after a disaster recovery event
 
+### Recovery Point Objective
+
+* The amount of data loss (in terms of time) for a production system during a disaster recovery event (i.e. RPO of an hour means data loss for an hour)
