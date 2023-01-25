@@ -176,3 +176,17 @@
 * Creates a complete continuous delivery toolchain for a custom application
 * Provides custom dashboards and configurations in the AWS Console (how all pieces work together)
 * You only are charged for the other services you leverage (do not pay for service; just a tool that makes it easier to work with other AWS services)
+
+### Summary
+
+* Reviewed scaling approaches and services for Amazon EC2 (horizontal/vertical scaling, auto scaling, ELBs)
+* Examined approaches for controlling access to Amazon EC2 instances (security groups, network ACLs, AWS VPN)
+* Explored services to protect infrastructure from hacking and attacks (Shield, Macie, Inspector)
+* Introduced developer tools on AWS (CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CodeStar)
+* Reviewed approaches for launching pre-defined solutions on Amazon EC2 (AWS Service Catalog, AWS Marketplace)
+
+### Scenario Based Review
+
+* Service Catalog
+* Inspector
+* 
