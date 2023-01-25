@@ -76,6 +76,20 @@
 
 ### Scenario Based Review
 
-* Multi Site
-* Backup and Restore
-* Pilot Light
+### Scenario 1
+
+Roger's company runs several production workloads in AWS. Roger is tasked with architecting the disaster recovering approach. His organizations want there to be a seamless transition during an event. Which disaster recovery approach would Roger's company use for this?
+
+* **Multi Site approach** (full production instances running both in own data center and in AWS)
+
+### Scenario 2
+
+Jennifer's company is a startup. They do not currently have a disaster recovery approach. In this case, minimizing cost is more critical than minimizing RTO. What disaster recovery approach would you recommend to Jennifer?
+
+* **Backup and Restore approach** (minimize cost; higher RTO)
+
+### Scenario 3
+
+Eliza is documenting her company's disaster recovery approach. They keep a few key servers up and running in AWS in case of an event. These servers have smaller instance types than what production would need. Which disaster recovery approach most closely matches this scenario?
+
+* **Pilot Light approach** (only a few key servers; core systems up and running in the cloud; have to launch other instances that support their environment if there is a DR event)
