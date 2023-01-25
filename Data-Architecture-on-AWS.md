@@ -84,3 +84,10 @@
 * Enables querying of **large-scale data** stored within **Amazon S3** (i.e. sales year after year)
 * Queries are written using standard SQL
 * Charged based on data scanned for query (amount of data that must be searched through)
+
+### Amazon Quicksight
+
+* Fully managed business intelligence (BI) service
+* Enables dynamic data dashboard based on data stored in AWS
+* Charged on a per-user and per-session pricing model (how many authors vs. how many people reading data)
+* Multiple versions provided based on needs (standard version vs. enterprise version with different capabilities and cost points)
