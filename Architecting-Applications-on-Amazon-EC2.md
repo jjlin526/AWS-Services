@@ -163,3 +163,9 @@
 * Managed deployment service for deploying your custom applications
 * Deploys to Amazon EC2, AWS Fargate, AWS Lambda, and on-premise servers
 * Provides dashboard for deployments in the AWS console (track deployments or start new deployments from console)
+
+### AWS CodePipeline
+
+* Fully-managed continuous delivery service on AWS
+* Provides the capabilities to automate building, testing, and deploying (integrate with previous services; can work with source code in CodeCommit; can then build and test within CodeBuild; and use CodeDeploy to deploy output artifacts)
+* Integrates with other developer tools as well as Github
