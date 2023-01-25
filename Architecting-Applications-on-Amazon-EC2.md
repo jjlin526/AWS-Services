@@ -89,3 +89,11 @@
 ### Distributed Denial of Service (DDoS)
 
 * A type of attack where a server or group of servers are flooded with more traffic than they can handle in a coordinated effort to bring the system down
+
+### AWS Shield
+
+* Provides protection against DDoS attacks for apps running on AWS
+* Enables on-going threat detection and mitigation
+* Has two different service levels:
+     * Standard
+     * Advanced
