@@ -71,3 +71,11 @@
 * Supported in two services:
     * Site-to-site VPN
     * Client VPN
+
+### Site-to-site VPN Example
+
+![image](https://user-images.githubusercontent.com/114364831/214670775-5b5292bb-0b55-4795-8e4b-b15da671280f.png)
+
+* Have servers in data center that must interact with EC2 instances within VPC on AWS
+* Can utilize AWS VPN service - create customer gateway and end that info into the service, and then a VPN gateway within VPC on AWS; enables encrypted traffic travelling between corporate data center and AWS
+* Direct Connect connects to AWS global infrastructure without using public internet; AWS VPN does use public internet, but is encrypted the entire way
