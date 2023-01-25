@@ -129,3 +129,16 @@
 * Includes a specific sub-service for medical use (transcribe information that has medical terms in it)
 * Supports batch and real-time transcription
 * Currently supports 31 languages
+
+### Summary
+
+* Reviewed approaches for integrating data from your own data center
+* Examined approaches for processing data (i.e. ETL and services that can support it)
+* Explored data analysis approaches (i.e. Athena, looking at data in S3, BI dashboards with QuickSight, and custom search solution using CloudSearch)
+* Integrated machine learning and AI into data analysis (i.e. Translate, Transcribe, video and iamge analysis with Rekognition)
+
+### Scenario Based Review
+
+* Amazon EMR
+* Amazon Rekognition
+* Amazon QuickSight
