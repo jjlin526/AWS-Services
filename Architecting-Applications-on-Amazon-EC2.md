@@ -212,6 +212,11 @@
 * CodePipeline is a service that allows you to automate the release process for your code, including building, testing, and deploying it.
 * CodeStar is a service that allows you to create, manage, and deploy applications on AWS.
 
+### AWS Service Catalog, AWS Marketplace
+
+* AWS Service Catalog is a service that allows you to create, manage, and distribute approved IT services to users.
+* AWS Marketplace is an online store where you can find, buy, and immediately start using software and services that run on AWS.
+
 ### Scenario Based Review
 
 * Service Catalog
