@@ -66,3 +66,16 @@
 ### Recovery Point Objective
 
 * The amount of data loss (in terms of time) for a production system during a disaster recovery event (i.e. RPO of an hour means data loss for an hour)
+
+### Summary
+
+* Understood the need for a disaster recovery strategy
+* Reviewed the four different disaster recovery approaches on AWS
+* Explored the factors to know when selecting an approach (RTO, RPO -- data)
+* Examined specific scenarios and disaster recovery needs
+
+### Scenario Based Review
+
+* Multi Site
+* Backup and Restore
+* Pilot Light
