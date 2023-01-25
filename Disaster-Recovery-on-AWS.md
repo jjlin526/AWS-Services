@@ -35,3 +35,7 @@
 * Does incur cost of this infrastructure continually running in the cloud
 * AMI's are prepared for additional systems and can be launched quickly
 
+### Definition of Pilot Light  
+
+* The pilot light method gives you a quicker recovery time than the backup-and-restore method because the core pieces of the system are already running and are continually kept up to date.
+
