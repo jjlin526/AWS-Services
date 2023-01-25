@@ -56,3 +56,10 @@
 * VPC's have default security groups
 * Must be explicitly associated with an EC2 instance
 * By default all outbound traffic is allowed (server can send any information out to the internet)
+
+### Network ACL
+
+* Works at the subnet level with a VPC (when you define a network configuration, every server that gets spun up within a subnet will adopt the ACL for that subnet) 
+* Enables you to allow and deny traffic
+* Each VPC has a default ACL that allows all inbound and outbound traffic
+* Custom ACL's deny all traffic until rules are added
