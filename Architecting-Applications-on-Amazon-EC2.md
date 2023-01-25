@@ -157,3 +157,9 @@
 * Do not have to worry about maintaining infrastructure
 * Charged per minute for compute resources you utilize
      * Builds application and creates output artifacts
+
+### AWS CodeDeploy
+
+* Managed deployment service for deploying your custom applications
+* Deploys to Amazon EC2, AWS Fargate, AWS Lambda, and on-premise servers
+* Provides dashboard for deployments in the AWS console (track deployments or start new deployments from console)
