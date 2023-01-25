@@ -121,3 +121,11 @@
 * Currently supports 54 languages
 * Can perform language identification
 * Works both in batch and real-time (get translation back as we are streaming it in)
+
+### Amazon Transcribe
+
+* Fully-managed speech recognition services
+* Recorded speech is converted into text in custom applications
+* Includes a specific sub-service for medical use (transcribe information that has medical terms in it)
+* Supports batch and real-time transcription
+* Currently supports 31 languages
