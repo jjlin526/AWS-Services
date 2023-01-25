@@ -139,6 +139,21 @@
 
 ### Scenario Based Review
 
-* Amazon EMR
-* Amazon Rekognition
-* Amazon QuickSight
+### Scenario 1
+
+Ruth is a data scientist for a financial services company. Large-scale data set needs to be processed before analysis. Ruth does not want to manage servers but just wants to define processing. What service would you recommend to Ruth?
+
+* **AWS Glue** (ETL capability in a serverless way)
+
+### Scenario 2
+
+Jessi is a member of the IT team for a biotech company. She is currently working to identify an approach for controlled lab access. She wants to leverage AI to determine access based on facial imaging. Is there an AWS service that can help with this approach?
+
+* **Amazon Rekognition** (store images of specific people and detect those in other images; could integrate that into the camera used for lab access)
+
+### Scenario 3
+
+Roger's company sells custom services around machine learning. His head of sales is trying to find a great way to visualize their sales data. This data is currently stored in Redshift as their data warehouse. What AWS service would allow this access to the data by non-technical resources?
+
+* **Amazon QuickSight** (without querying data; self-service dashboards based on data stored in RedShift)
+
