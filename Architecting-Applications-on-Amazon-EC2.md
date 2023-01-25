@@ -131,3 +131,16 @@
 * Provides AMI's, CloudFormation stacks, and SaaS based solutions
 * Enables different pricing options to overcome licensing in the cloud (third-party vendors have licensing more tied to physical servers)
 * Charges appear on your AWS bill (some things are free and some have charges on top of AWS infrastructure costs)
+
+### Developer Tools
+
+### AWS Developer Services
+
+![image](https://user-images.githubusercontent.com/114364831/214693493-b627b3f2-899e-4d4e-87b1-9590d23f102c.png)
+
+* AWS CodeCommit is a managed source code repository using git; alternative to GitHub; deeply integrated with AWS
+* AWS CodeBuild is a build service (continuous integration); run build commands for custom apps to create output artifacts
+* AWS CodeDeploy takes care of deployment out to many AWS services
+* AWS CodePipeline knows how to work with all other services mentioned previously to create a pipeline; enables us to look at whole process of building, testing and deploying apps
+* AWS CodeStar bootstraps entire process for custom apps
+
