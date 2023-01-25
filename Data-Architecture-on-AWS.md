@@ -115,3 +115,9 @@
 * Can detect specific people using facial analysis
 * Supports custom labels for your business objects
 
+### Amazon Translate
+
+* Fully-managed service for translation of text
+* Currently supports 54 languages
+* Can perform language identification
+* Works both in batch and real-time (get translation back as we are streaming it in)
