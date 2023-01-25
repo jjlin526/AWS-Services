@@ -91,3 +91,12 @@
 * Enables dynamic data dashboard based on data stored in AWS
 * Charged on a per-user and per-session pricing model (how many authors vs. how many people reading data)
 * Multiple versions provided based on needs (standard version vs. enterprise version with different capabilities and cost points)
+
+![image](https://user-images.githubusercontent.com/114364831/214464687-521fc838-5ce6-4a0f-b3e4-3f90cb3d2e62.png)
+
+### Amazon CloudSearch
+
+* Fully-managed search service on AWS
+* Support scaling of search infrastructure to meet demand
+* Charged per hour and instance type of search infrastructure
+* Enables developers to integrate search into custom applications (search through a ton of PDF documents that organization has stored)
