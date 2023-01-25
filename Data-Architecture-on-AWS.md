@@ -71,3 +71,9 @@
 * Manages data workflow through AWS services
 * Supports S3, EMR, Redshift, DynamoDB, and RDS
 * Can integrate on-premise data stores
+
+### Analyzing Data
+
+### Data Analysis Services
+
+![image](https://user-images.githubusercontent.com/114364831/214462986-185a2c85-adca-4150-955b-feaec7cc1023.png)
