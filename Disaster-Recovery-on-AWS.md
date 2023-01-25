@@ -45,3 +45,10 @@
 * Critical systems can be running on less capable instance types
 * Instance types and other systems can be ramped up for disaster recovery event
 * Does incur cost of this infrastructure continually running in the cloud
+
+### Multi Site
+
+* Full environment is running in the cloud at all times
+* Utilizes instance types needed for production not just recovery
+* Provides a near seamless recovery process
+* Incurs the most cost over the other approaches
