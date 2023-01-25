@@ -97,3 +97,10 @@
 * Has two different service levels:
      * Standard
      * Advanced
+
+### AWS Macie
+
+* Utilizes machine learning to analyze data stored in Amazon S3
+* It can detect personal information and intellectual property in S3 (without us having to classify the data; prevents leaks through categorization)
+* Provides dashboards that show how the data is being stored and accessed
+* Enables alerts if it detects anything unusual about data access (anomaly detection using machine learning -- detect strange patterns in data access; detection that we could not do if monitoring manually)
