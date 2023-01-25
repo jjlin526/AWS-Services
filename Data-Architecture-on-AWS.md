@@ -77,3 +77,10 @@
 ### Data Analysis Services
 
 ![image](https://user-images.githubusercontent.com/114364831/214462986-185a2c85-adca-4150-955b-feaec7cc1023.png)
+
+### Amazon Athena
+
+* Fully-managed serverless service
+* Enables querying of **large-scale data** stored within **Amazon S3** (i.e. sales year after year)
+* Queries are written using standard SQL
+* Charged based on data scanned for query (amount of data that must be searched through)
