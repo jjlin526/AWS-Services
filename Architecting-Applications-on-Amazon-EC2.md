@@ -79,3 +79,9 @@
 * Have servers in data center that must interact with EC2 instances within VPC on AWS
 * Can utilize AWS VPN service - create customer gateway and end that info into the service, and then a VPN gateway within VPC on AWS; enables encrypted traffic travelling between corporate data center and AWS
 * Direct Connect connects to AWS global infrastructure without using public internet; AWS VPN does use public internet, but is encrypted the entire way
+
+### Protecting Infrastructure from Attacks
+
+### Security Services
+
+![image](https://user-images.githubusercontent.com/114364831/214673448-29760e62-3386-4f22-b15b-440830417251.png)
