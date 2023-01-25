@@ -27,3 +27,11 @@
 * EBS data can be stored as snapshots in Amazon S3 also
 * In a Disaster Recovery event, a process is started to launch a new environment (completely new environment; spin up all servers and database instances)
 * This approach has the longest recovery time (least cost)
+
+### Pilot Light
+
+* Key infrastructure components are kept running in the cloud
+* Designed to reduce recovery time over the Backup and Restore approach
+* Does incur cost of this infrastructure continually running in the cloud
+* AMI's are prepared for additional systems and can be launched quickly
+
