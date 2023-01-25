@@ -104,3 +104,11 @@
 * It can detect personal information and intellectual property in S3 (without us having to classify the data; prevents leaks through categorization)
 * Provides dashboards that show how the data is being stored and accessed
 * Enables alerts if it detects anything unusual about data access (anomaly detection using machine learning -- detect strange patterns in data access; detection that we could not do if monitoring manually)
+
+### Amazon Inspector
+
+* Enables scanning of Amazon EC2 instances for security vulnerabilities (keeping instances up to date; patched for critical vulnerabilities; following best practices -- run Inspector in on-demand manner)
+* Charged by instance per assessment run (i.e. choose to run assessment on 10 instances - will be charged accordingly)
+* Two types of rules packages:
+     * Network reachability assessment (understand what is available to the internet from servers)
+     * Host assessment (check EC2 instances to make sure they have been patched for critical vulnerabilities and that no common configuration errors have been made within the server)
