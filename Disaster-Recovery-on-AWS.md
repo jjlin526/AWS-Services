@@ -39,3 +39,9 @@
 
 * The pilot light method gives you a quicker recovery time than the backup-and-restore method because the core pieces of the system are already running and are continually kept up to date.
 
+### Warm Standby
+
+* A scaled-down version of the full environment is running in the cloud
+* Critical systems can be running on less capable instance types
+* Instance types and other systems can be ramped up for disaster recovery event
+* Does incur cost of this infrastructure continually running in the cloud
