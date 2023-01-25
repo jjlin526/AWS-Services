@@ -150,3 +150,10 @@
 * Utilizes Git for repositories
 * Controls access with IAM policies (control access to this just like any other AWS resource)
 * Serves as an alternative to Github and Bitbucket
+
+### AWS CodeBuild
+
+* Fully managed build and continuous integration service on AWS
+* Do not have to worry about maintaining infrastructure
+* Charged per minute for compute resources you utilize
+     * Builds application and creates output artifacts
