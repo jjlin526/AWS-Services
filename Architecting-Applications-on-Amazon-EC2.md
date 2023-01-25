@@ -204,6 +204,14 @@
 * Macie is a service that uses machine learning to automatically discover and classify sensitive data in your AWS environment, helping you to protect it from unauthorized access.
 * Inspector is a service that analyzes the security of your application and network, identifying potential vulnerabilities and providing recommendations for remediation.
 
+### CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CodeStar
+
+* CodeCommit is a service that allows you to store and manage code in a private Git repository.
+* CodeBuild is a service that allows you to build and test your code.
+* CodeDeploy is a service that allows you to automate the deployment of your code to different environments.
+* CodePipeline is a service that allows you to automate the release process for your code, including building, testing, and deploying it.
+* CodeStar is a service that allows you to create, manage, and deploy applications on AWS.
+
 ### Scenario Based Review
 
 * Service Catalog
