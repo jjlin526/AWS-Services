@@ -112,3 +112,10 @@
 * Two types of rules packages:
      * Network reachability assessment (understand what is available to the internet from servers)
      * Host assessment (check EC2 instances to make sure they have been patched for critical vulnerabilities and that no common configuration errors have been made within the server)
+
+### Deploying Pre-defined Solutions on AWS
+
+![image](https://user-images.githubusercontent.com/114364831/214686516-b59c8b7d-bda3-478a-872f-29ccea74d141.png)
+
+
+
