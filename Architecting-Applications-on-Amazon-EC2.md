@@ -33,3 +33,10 @@
 ![image](https://user-images.githubusercontent.com/114364831/214645848-fcfdfa74-9119-4f20-be3e-982540d7e7dc.png)
 
 * Application Load Balancer (type of ELB) works with Auto Scaling Group to know which instances are healthy and which are not; routes user traffic based on health
+
+### AWS Secrets Manager
+
+* Secure way to integrate credentials, API keys, tokens, and other secret content (in a way that cannot be compromised; when scaling out to multiple servers)
+* Integrates natively with RDS, DocumentDB, and Redshift
+* Can auto-rotate credentials with integrated services
+* Enables fine-grained access control to secrets
