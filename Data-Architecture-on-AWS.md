@@ -100,3 +100,9 @@
 * Support scaling of search infrastructure to meet demand
 * Charged per hour and instance type of search infrastructure
 * Enables developers to integrate search into custom applications (search through a ton of PDF documents that organization has stored)
+
+### Integrating AI and Machine Learning
+
+### AI and Machine Learning Services
+
+![image](https://user-images.githubusercontent.com/114364831/214465885-57fb11a3-7d5f-4f0e-b4da-7784ad37e05f.png)
