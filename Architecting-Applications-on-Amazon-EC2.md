@@ -198,6 +198,12 @@
 * Network ACLs (Access Control Lists) are another way to control access to resources within a VPC, but at the subnet level.
 * AWS VPN (Virtual Private Network) allows you to create a secure connection between your on-premises network and a VPC, allowing you to access resources in the VPC as if they were on your local network.
 
+### Shield, Macie, and Inspector
+
+* Shield is a service that provides DDoS protection for your applications and resources.
+* Macie is a service that uses machine learning to automatically discover and classify sensitive data in your AWS environment, helping you to protect it from unauthorized access.
+* Inspector is a service that analyzes the security of your application and network, identifying potential vulnerabilities and providing recommendations for remediation.
+
 ### Scenario Based Review
 
 * Service Catalog
