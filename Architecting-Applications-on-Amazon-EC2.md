@@ -19,3 +19,11 @@
 ### Amazon EC2 Horizontal Scaling Services
 
 ![image](https://user-images.githubusercontent.com/114364831/214640342-d797c194-beee-42ea-9286-86598c84eb6b.png)
+
+### Amazon EC2 Auto Scaling Group
+
+* Launch template defines the instance configuration for the group (i.e. Windows 2019 server running on a certain instance type and certain security group associated with it -- can be defined in launch template)
+* Defines the minimum, maximum, and desired number of instances
+* Performs health checks on each instance (i.e. custom health check -- can provide a URL that returns a status code)
+* Exists within 1 or more availability zones in a single region (adds a level of fault tolerance)
+* Works with on-demand and spot instances
