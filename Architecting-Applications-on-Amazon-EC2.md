@@ -15,3 +15,5 @@
 ![image](https://user-images.githubusercontent.com/114364831/214639682-2e403f7f-24c4-44de-9515-0900ad898667.png)
 
 * Horizontal scaling is a much more sustainable approach than vertical scaling
+
+### Amazon EC2 Horizontal Scaling Services
