@@ -27,3 +27,9 @@
 * Performs health checks on each instance (i.e. custom health check -- can provide a URL that returns a status code)
 * Exists within 1 or more availability zones in a single region (adds a level of fault tolerance)
 * Works with on-demand and spot instances
+
+### Amazon EC2 Horizontal Scaling Example
+
+![image](https://user-images.githubusercontent.com/114364831/214645848-fcfdfa74-9119-4f20-be3e-982540d7e7dc.png)
+
+* Application Load Balancer (type of ELB) works with Auto Scaling Group to know which instances are healthy and which are not; routes user traffic based on health
