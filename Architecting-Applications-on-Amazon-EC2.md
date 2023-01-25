@@ -169,3 +169,10 @@
 * Fully-managed continuous delivery service on AWS
 * Provides the capabilities to automate building, testing, and deploying (integrate with previous services; can work with source code in CodeCommit; can then build and test within CodeBuild; and use CodeDeploy to deploy output artifacts)
 * Integrates with other developer tools as well as Github
+
+### AWS CodeStar
+
+* Workflow tool that automates the use of the other developer services
+* Creates a complete continuous delivery toolchain for a custom application
+* Provides custom dashboards and configurations in the AWS Console (how all pieces work together)
+* You only are charged for the other services you leverage (do not pay for service; just a tool that makes it easier to work with other AWS services)
