@@ -106,3 +106,12 @@
 ### AI and Machine Learning Services
 
 ![image](https://user-images.githubusercontent.com/114364831/214465885-57fb11a3-7d5f-4f0e-b4da-7784ad37e05f.png)
+
+### Amazon Rekognition
+
+* Fully-managed image and video recognition deep learning service
+* Identifies objects in images
+* Identifies objects and actions in videos
+* Can detect specific people using facial analysis
+* Supports custom labels for your business objects
+
