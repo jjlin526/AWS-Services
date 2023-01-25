@@ -85,3 +85,7 @@
 ### Security Services
 
 ![image](https://user-images.githubusercontent.com/114364831/214673448-29760e62-3386-4f22-b15b-440830417251.png)
+
+### Distributed Denial of Service (DDoS)
+
+* A type of attack where a server or group of servers are flooded with more traffic than they can handle in a coordinated effort to bring the system down
