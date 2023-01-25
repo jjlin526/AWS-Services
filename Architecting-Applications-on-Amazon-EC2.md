@@ -47,3 +47,12 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214650388-381ed90a-7b25-426c-ab87-2de122acb955.png)
 
+### Security Groups
+
+* Serve as a firewall for your EC2 instances
+* Control inbound and outbound traffic
+* Works at the instance level (do not work at the subnet or VPC-level, they work at the instance level)
+* EC2 instances can belong to multiple security groups (may create security groups for common purposes; i.e. configurations for web servers)
+* VPC's have default security groups
+* Must be explicitly associated with an EC2 instance
+* By default all outbound traffic is allowed (server can send any information out to the internet)
