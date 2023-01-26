@@ -90,3 +90,30 @@
 * Review charges by service for an AWS Account
 * Utilize pre-defined reports included with the Cost Explorer
 * Download data from the AWS Cost Explorer
+
+## Summary
+
+* Understood funding between traditional data centers and the cloud
+* Utilized AWS tools for cost organization
+* Examined the AWS tools used in making a case for moving to the cloud
+* Explored AWS costs using the AWS provided tools
+
+### Apply Cloud Economics
+
+### Scenario 1
+
+Oscar's company has multiple departments that work within AWS. Finance is asking for a clean separation of AWS costs between departments. Currently all resources are included within a single AWS account. What approach would meet this need for future costs with minimal effort?
+
+* **Create and leverage a Resource Tag for each department** (why not AWS Organizations -- moving resources between different accounts is additional effort required)
+
+### Scenario 2
+
+Cindy's company is considering a transition to the cloud. They currently have two physical data centers that they own and maintain. Stakeholders are questioning whether this approach will save money. Which approach should Cindy take to make a case for the cloud?
+
+* **Utilize AWS Migration Hub or Migration Evaluator to build a business case**
+
+### Scenario 3
+
+* William is a web developer at his company. Given some recent downtime he is looking at moving their site to the cloud. Finance is asking for an estimate of costs for this transition to AWS. What approach should William take to get this data to his finance team?
+
+* **Utilize the AWS Pricing Calculator and share results**
