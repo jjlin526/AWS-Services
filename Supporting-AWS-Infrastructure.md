@@ -39,3 +39,11 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214903395-ca1e6c8b-b33c-41d8-a258-2bc9d5c80171.png)
 
+### AWS Basic Support
+
+* Provided for all AWS customers
+* Access to Trusted Advisor (7 Core Checks)
+* 24 x 7 Access to customer service, documentation, forums, and whitepapers
+   * No access to AWS support engineers for technical implementation questions
+* Access to AWS Personal Health Dashboard
+* No monthly cost
