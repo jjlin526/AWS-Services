@@ -21,3 +21,11 @@
 
 * Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you
 - i.e. partial outage of a service in a region; will gain insight on that and understand how that could affect your infrastructure
+
+### AWS Trusted Advisor
+
+* Automated tool to check your AWS usage against best practices
+* Accessed from the AWS console
+* Different checks are provided based on the AWS Support plan tier
+* All AWS customers get access to seven core checks
+
