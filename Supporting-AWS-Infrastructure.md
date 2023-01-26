@@ -99,12 +99,18 @@
 
 ### Scenario 1
 
-* Business support
+Sylvia's company is in the process of moving multiple workloads into AWS. One of these workloads is a mission critical application. Her CTO says that they need to be able to call support 24 hours a day. What is the most cost effective support plan that meets this criteria?
+
+* **Business Support** (call support - either business or enterprise plans; developer plan only has email access and basic plan has no access to support engineers for technical implementation questions; 24 hours works for both business and enterprise; but business support is more cost-effective)
 
 ### Scenario 2
 
-* Enterprise support
+Edward's company is evaluating AWS for future workloads. One of the workloads supports multiple offices globally. The company needs to be able to call, text, or email support if an issue occurs. The company also needs a response from support in 15 minutes. What is the most cost effective support plan that meets this criteria?
+
+* **Enterprise Support** (15 minute response time if we have a mission-critical system down)
 
 ### Scenario 3
 
-* Basic support
+William has an AWS account for a personal project. He does not expect to need technical guidance from AWS. He does want access to the AWS Trusted Advisor core checks. What is the most cost effective support plan that meets this criteria?
+
+* **Basic Support**  
