@@ -76,3 +76,8 @@
 
 ![image](https://user-images.githubusercontent.com/114364831/214877395-93277523-e1ef-413c-9bd9-582df2647afb.png)
 
+### Demo
+
+* Access the AWS Pricing Calculator
+* Estimate costs for a workload on the cloud using the calculator
+* Save and share the results with other individuals
