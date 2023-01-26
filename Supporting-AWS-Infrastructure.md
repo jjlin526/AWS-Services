@@ -47,3 +47,10 @@
    * No access to AWS support engineers for technical implementation questions
 * Access to AWS Personal Health Dashboard
 * No monthly cost
+
+### AWS Developer Support
+
+* Includes all features of Basic Support
+* Business hours email access to support engineers
+* Limited to 1 primary contact (file support requests)
+* Starts at $29 per month (tied to AWS usage)
