@@ -32,3 +32,10 @@
 ### Trusted Advisor Checks
 
 ![image](https://user-images.githubusercontent.com/114364831/214903143-f3259c2e-e017-43c0-8b61-a73960360b08.png)
+
+### AWS Support Plan Tiers
+
+### AWS Support Plan Differences
+
+![image](https://user-images.githubusercontent.com/114364831/214903395-ca1e6c8b-b33c-41d8-a258-2bc9d5c80171.png)
+
