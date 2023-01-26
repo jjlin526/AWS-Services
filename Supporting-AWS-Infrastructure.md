@@ -74,3 +74,12 @@
 ### Support Response Times
 
 ![image](https://user-images.githubusercontent.com/114364831/214912079-f30c7447-12ee-4de1-8836-f1da569ac1ca.png)
+
+### AWS Support Tools
+
+### Demo
+
+* Access AWS Trusted Advisor in the console
+* Review AWS Trusted Advisor recommendations
+* Access the AWS Personal Health Dashboard
+* Review information provided in the AWS Personal Health Dashboard
