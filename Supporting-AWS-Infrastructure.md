@@ -83,3 +83,7 @@
 * Review AWS Trusted Advisor recommendations
 * Access the AWS Personal Health Dashboard
 * Review information provided in the AWS Personal Health Dashboard
+
+### Assistance for Cloud Workloads
+
+![image](https://user-images.githubusercontent.com/114364831/214921045-6dc99c2e-378d-4755-ba30-0ca59b84ba2d.png)
