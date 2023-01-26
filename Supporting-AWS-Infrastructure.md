@@ -16,3 +16,8 @@
 * Enables support from AWS resources for workloads running in the cloud
 * Provided in different tiers based on need and scope
 * Includes tools to provide automated answers and recommendations
+
+### AWS Personal Health Dashboard
+
+* Dashboard provides alerts and remediation guidance when AWS is experiencing events that may impact you
+- i.e. partial outage of a service in a region; will gain insight on that and understand how that could affect your infrastructure
