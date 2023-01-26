@@ -70,3 +70,7 @@
 * Includes designated Technical Account Manager (TAM)
 * Includes concierge support team
 * Starts at $15 000 per month (tied to AWS usage)
+
+### Support Response Times
+
+![image](https://user-images.githubusercontent.com/114364831/214912079-f30c7447-12ee-4de1-8836-f1da569ac1ca.png)
