@@ -64,5 +64,9 @@
 * Provides third-party software support (want help in deploying third party piece of software to AWS)
 * Starts $100 per month (tied to AWS usage; more AWS usage results in more payment)
 
+### AWS Enterprise Support
 
-* 
+* Includes all features of Business Support
+* Includes designated Technical Account Manager (TAM)
+* Includes concierge support team
+* Starts at $15 000 per month (tied to AWS usage)
