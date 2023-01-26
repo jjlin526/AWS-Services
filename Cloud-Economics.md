@@ -69,3 +69,10 @@
 ![image](https://user-images.githubusercontent.com/114364831/212150705-61b6ed9b-aed4-434f-a53a-16322a16e3a6.png)
 
 ![image](https://user-images.githubusercontent.com/114364831/212150783-ea4d8eb1-f89f-44e3-9dff-79256b6db38c.png)
+
+### Using the AWS Pricing Calculator
+
+* Estimating future workloads
+
+![image](https://user-images.githubusercontent.com/114364831/214877395-93277523-e1ef-413c-9bd9-582df2647afb.png)
+
