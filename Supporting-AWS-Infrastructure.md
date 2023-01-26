@@ -29,3 +29,6 @@
 * Different checks are provided based on the AWS Support plan tier
 * All AWS customers get access to seven core checks
 
+### Trusted Advisor Checks
+
+![image](https://user-images.githubusercontent.com/114364831/214903143-f3259c2e-e017-43c0-8b61-a73960360b08.png)
