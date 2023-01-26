@@ -219,6 +219,20 @@
 
 ### Scenario Based Review
 
-* Service Catalog
-* Inspector
-* 
+### Scenario 1
+
+Ellen is a solutions architect at a traditional financial services company. They recently transitioned to AWS. They want to be sure each department follows best practices. They want to create compliant IT services that other departments can use. What service would you recommend for Ellen and her team?
+
+* **AWS Service Catalog** (services are designed for use within organization; Marketplace is more for third-party services that can be launched on AWS)
+
+### Scenario 2
+
+Tim's company leverages AWS for multiple production workloads. Recently they have had downtime due to one of their aplications failing on EC2. Tim is looking to avoid downtimw if an instance stops responding. What approach would you recommend for Tim to solve this issue?
+
+* **Create an EC2 Auto Scaling Group alongside and Elastic Load Balancer** (respond automatically if a server goes down; can spin up a new one; and have multiple servers running at any one time and route users to healthy ones and not unhealthy ones)
+
+### Scenario 3
+
+Jane's company deals with sensitive information from its users. They have to put reasonable policies in place for data stored in S3. Jane is worried if some of those policies accidentally get changed; she is also worried of a breach going unnoticed. What service would you recommend to Jane and her company?
+
+* **Amazon Macie** (use machine learning to classify data, find data that is sensitive and monitor that data and its access patterns; proactively alert them if any anomalies occur within any patterns)
