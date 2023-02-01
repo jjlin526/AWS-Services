@@ -1,0 +1,3 @@
+### Amazon ECS
+
+* Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service provided by Amazon Web Services (AWS). It makes it easy to run, stop, and manage Docker containers on a cluster of Amazon EC2 instances. ECS helps automate the deployment, scaling, and management of containers. ECS is integrated with other AWS services, such as Amazon VPC, Amazon EC2, Amazon S3, and Amazon CloudWatch, which provides customers with a secure and scalable way to manage their containerized applications. It supports both EC2 launch type and the newer Fargate launch type, which allows customers to run containers without having to manage the underlying EC2 instances.
