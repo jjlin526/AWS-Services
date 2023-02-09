@@ -5,6 +5,12 @@
 * You create a template that describes all the AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you
 * You do not need to individually create and configure AWS resources and figure out what is dependent on what; CloudFormation handles that
 
+* **Infrastructure as Code (IaC)**: CloudFormation enables you to provision, manage and deploy your infrastructure as code, meaning you can describe your infrastructure resources in a text file and version-control that file alongside your other code.
+
+* **Template-Based Deployment**: CloudFormation uses templates, written in JSON or YAML, to define and deploy the required resources in your infrastructure. These templates are declarative and you only need to specify what resources you need, not how to create them.
+
+* **Stack**: A CloudFormation stack is a collection of AWS resources that you can manage as a single unit. You can create, update and delete a stack as a whole, making it easier to manage complex infrastructures. Stacks also provide a way to track changes to your infrastructure and revert to previous versions if necessary.
+
 ### What is Infrastructure as Code (IAC)?
 
 * Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through **code instead of through manual processes**. With IaC, configuration files are created that contain infrastructure specifications, which makes it easier to edit and distribute configurations.
