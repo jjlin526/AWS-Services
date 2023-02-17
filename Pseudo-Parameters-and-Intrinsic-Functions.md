@@ -133,7 +133,15 @@ Fn::FindInMap: [ MapName, TopLevelKey, SecondLevelKey ]
 
 You cannot nest two instances of two functions in short form.
 
-**Parameters**
+**Parameters**  
+
+- **MapName**: The logical name of a mapping declared in the Mappings section that contains the keys and values.
+- **TopLevelKey**: The top-level key name. Its value is a list of key-value pairs.
+- **SecondLevelKey**: The second-level key name, which is set to one of the keys from the list assigned to `TopLevelKey`.
+
+**Return Value**  
+The value that is assigned to `SecondLevelKey`.
+
 
 
 
