@@ -534,3 +534,40 @@ The following example splits an imported output value, and then selects the thir
 ```yaml
 !Select [2, !Split [",", !ImportValue AccountSubnetIDs]]
 ```
+
+### Fn::Sub
+The intrinsic function `Fn::Sub` substitutes variables in an input string with values that you specify. In your templates, you can use this function to construct commands or outputs that include values that aren't available until you create or update a stack.
+
+```yaml
+Fn::Sub:
+  - String
+  - Var1Name: Var1Value
+    Var2Name: Var2Value
+    
+!Sub
+  - String
+  - Var1Name: Var1Value
+    Var2Name: Var2Value
+```
+
+If you're substituting only template parameters, resource logical IDs, or resource attributes in the String parameter, don't specify a variable map.
+
+```yaml
+Fn::Sub: String
+
+!Sub String
+```
+
+**Parameters**  
+- **String**: A string with variables that AWS CloudFormation substitutes with their associated values at runtime. Write variables as `${MyVarName}`. Variables can be template parameter names, resource logical IDs, resource attributes, or a variable in a key-value map. If you specify only template parameter names, resource logical IDs, and resource attributes, don't specify a key-value map.
+- 
+If you specify template parameter names or resource logical IDs, such as `${InstanceTypeParameter}`, CloudFormation returns the same values as if you used the `Ref` intrinsic function. If you specify resource attributes, such as `${MyInstance.PublicIp}`, CloudFormation returns the same values as if you used the `Fn::GetAtt` intrinsic function.
+
+To write a dollar sign and curly braces (`${}`) literally, add an exclamation point (`!`) after the open curly brace, such as `${!Literal}`. CloudFormation resolves this text as `${Literal}`.
+- **VarName**: The name of a variable that you included in the String parameter.
+- **VarValue**: The value that CloudFormation substitutes for the associated variable name at runtime.
+
+**Return Value**  
+CloudFormation returns the original string, substituting the values for all the variables.
+
+The following examples demonstrate how to use the `Fn::Sub` function.
