@@ -704,3 +704,43 @@ MyEIP:
 ```
 
 No support functions: You can't use any functions in the `Ref` function. You must specify a string that's a resource logical ID.
+
+### Pseudo Parameters
+Pseudo parameters are parameters that are predefined by AWS CloudFormation. You don't declare them in your template. Use them the same way as you would a parameter, as the argument for the `Ref` function.
+
+The following snippet assigns the value of the `AWS::Region` pseudo parameter to an output value:
+
+```yaml
+Outputs:
+  MyStacksRegion:
+    Value: !Ref "AWS::Region"
+```
+
+### AWS::AccountId
+
+Returns the AWS account ID of the account in which the stack is being created, such as `123456789012`.
+
+### AWS::NotificationARNs
+
+Returns the list of notification Amazon Resource Names (ARNs) for the current stack.
+
+```yaml
+myASGrpOne:
+  Type: AWS::AutoScaling::AutoScalingGroup
+  Version: '2009-05-15'
+  Properties:
+    AvailabilityZones:
+    - "us-east-1a"
+    LaunchConfigurationName:
+      Ref: MyLaunchConfiguration
+    MinSize: '0'
+    MaxSize: '0'
+    NotificationConfigurations:
+    - TopicARN:
+        Fn::Select:
+        - '0'
+        - Ref: AWS::NotificationARNs
+      NotificationTypes:
+      - autoscaling:EC2_INSTANCE_LAUNCH
+      - autoscaling:EC2_INSTANCE_LAUNCH_ERROR
+```
