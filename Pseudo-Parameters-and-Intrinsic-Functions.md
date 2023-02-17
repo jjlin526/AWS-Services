@@ -409,4 +409,27 @@ The following example uses `Fn::Join` to construct a string value. It uses the `
     - !Ref AWS::AccountId
 ```
 
+### Fn::Length
+The intrinsic function `Fn::Length` returns the number of elements within an array or an intrinsic function that returns an array.
+
+```yaml
+Fn::Length : IntrinsicFunction
+
+Fn::Length : Array
+```
+
+### Examples
+This example snippet returns the number of elements in an intrinsic function that returns an array. The function returns 3.
+
+```yaml
+Transform: 'AWS::LanguageExtensions'
+#...
+  Fn::Length: 
+    !Split ["|", "a|b|c"]
+#...
+```
+
+
+
+
 
