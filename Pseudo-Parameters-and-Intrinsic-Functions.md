@@ -235,6 +235,27 @@ Resources:
           SourceSecurityGroupName: !GetAtt myELB.SourceSecurityGroup.GroupName         
 ```
 
+### Fn::GetAZs
+The intrinsic function `Fn::GetAZs` returns an array that lists Availability Zones for a specified region in alphabetical order. Because customers have access to different Availability Zones, the intrinsic function `Fn::GetAZs` enables template authors to write templates that adapt to the calling user's access. That way you don't have to hard-code a full list of Availability Zones for a specified region.
+
+```yaml
+Fn::GetAZs: region
+
+!GetAZs region
+```
+
+**Parameters**  
+- **region**: The name of the region for which you want to get the Availability Zones.
+
+You can use the `AWS::Region` pseudo parameter to specify the region in which the stack is created. Specifying an empty string is equivalent to specifying AWS::Region.
+
+**Return Value**  
+The list of Availability Zones for the region.
+
+### Examples
+For these examples, CloudFormation evaluates `Fn::GetAZs` to the following array—assuming that the user has created the stack in the `us-east-1` region:
+
+`[ "us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d" ]`
 
 
 
