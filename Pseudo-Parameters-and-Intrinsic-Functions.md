@@ -61,7 +61,8 @@ Fn::Cidr:
 !Cidr [ipBlock, count, cidrBits]
 ```
 
-**Parameters**
+**Parameters**  
+
 - **ipBlock**: The user-specified CIDR address block to be split into smaller address blocks.
 - **count**: The number of CIDRs to generate. Valid range is between 1 and 256.
 - **cidrBits**: The number of subnet bits for the CIDR. For eaxmple, specifying a value of "8" for this parameter will create a CIDR with a mask of "/24".
@@ -70,10 +71,12 @@ The `Fn::Cidr` function takes three parameters: the base IP address, the number 
 
 * Subnet bits is the inverse of subnet mask. To calculate the required host bits for a given subnet bits, subtract the subnet bits from 32 for IPv4 or 128 for IPv6.
 
-**Return Value**
+**Return Value**  
+
 An array of CIDR address blocks
 
-**Example**
+**Example**  
+
 This example creates 6 CIDRs with a subnet mask "/27" inside from a CIDR with a mask of "/24".
 
 ```yaml
@@ -92,7 +95,8 @@ The resulting list of CIDR blocks might look like this:
 ```
 This list of CIDR blocks could be used to create two subnets in a VPC, each with 256 IP addresses.
 
-**Creating an IPv6 enabled VPC**
+**Creating an IPv6 enabled VPC**  
+
 This example template creates an IPv6 enabled subnet.
 
 ```yaml
@@ -117,6 +121,33 @@ Resources:
 ```
 
 A CIDR block is a way of specifying a range of IP addresses. It consists of an IP address and a network mask that specifies the number of bits in the address that are used to identify the network. CIDR notation is often used to specify the IP address ranges used by subnets in a VPC.
+
+### Fn::FindInMap
+The intrinsic function `Fn::FindInMap` returns the value corresponding to keys in a two-level map that is declared in the `Mappings` section.
+
+```yaml
+Fn::FindInMap: [ MapName, TopLevelKey, SecondLevelKey ]
+
+!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
+```
+
+You cannot nest two instances of two functions in short form.
+
+**Parameters**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
