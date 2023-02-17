@@ -429,7 +429,76 @@ Transform: 'AWS::LanguageExtensions'
 #...
 ```
 
+This example snippet returns the number of elements in a `Ref` intrinsic function that refers to a list parameter type. If the parameter with the name `ListParameter` is a list with 3 elements, the function returns 3.
 
+```yaml
+Transform: 'AWS::LanguageExtensions'
+#...
+  Fn::Length: 
+    !Ref ListParameter
+#...
+```
 
+This example snippet returns the number of elements in the array passed to the intrinsic function. The function returns 3.
 
+Transform: 'AWS::LanguageExtensions'
+#...
+  Fn::Length: 
+    - 1
+    - !Ref ParameterName
+    - 3
+#...
 
+### Fn::Select
+The intrinsic function `Fn::Select` returns a single object from a list of objects by index.
+
+```yaml
+Fn::Select: [ index, listOfObjects ] 
+
+!Select [ index, listOfObjects ]
+```
+
+### Examples
+
+The following example returns: "grapes".
+
+```yaml
+!Select [ "1", [ "apples", "grapes", "oranges", "mangoes" ] ]
+```
+
+You can use `Fn::Select` to select an object from a `CommaDelimitedList` parameter. You might use a `CommaDelimitedList` parameter to combine the values of related parameters, which reduces the total number of parameters in your template. For example, the following parameter specifies a comma-delimited list of three CIDR blocks:
+
+```yaml
+Parameters: 
+  DbSubnetIpBlocks: 
+    Description: "Comma-delimited list of three CIDR blocks"
+    Type: CommaDelimitedList
+    Default: "10.0.48.0/24, 10.0.112.0/24, 10.0.176.0/24"
+```
+
+To specify one of the three CIDR blocks, use `Fn::Select` in the Resources section of the same template, as shown in the following sample snippet:
+
+```yaml
+Subnet0: 
+  Type: "AWS::EC2::Subnet"
+  Properties: 
+    VpcId: !Ref VPC
+    CidrBlock: !Select [ 0, !Ref DbSubnetIpBlocks ]
+```
+
+**Nested Functions with Short Form YAML**  
+
+The following examples show valid patterns for using nested intrinsic functions with the `!Select` short form. You can't nest short form functions consecutively, so a pattern like `!GetAZs !Ref` isn't valid.
+
+```yaml
+AvailabilityZone: !Select 
+  - 0
+  - !GetAZs 
+    Ref: 'AWS::Region'
+```
+
+```yaml
+AvailabilityZone: !Select 
+  - 0
+  - Fn::GetAZs: !Ref 'AWS::Region'
+```
