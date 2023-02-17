@@ -679,3 +679,28 @@ Parameters:
 ```
 
 No support functions. CloudFormation passes any intrinsic function calls included in `Fn::Transform` to the specified macro as literal strings. 
+
+### Ref
+
+The intrinsic function `Ref` returns the value of the specified parameter or resource.
+* When you specify a parameter's logical name, it returns the value of the parameter.
+* When you specify a resource's logical name, it returns a value that you can typically use to refer to that resource, such as a physical ID.
+
+```yaml
+Ref: logicalName
+
+!Ref logicalName
+```
+
+### Examples
+
+The following resource declaration for an Elastic IP address needs the instance ID of an EC2 instance and uses the `Ref` function to specify the instance ID of the `MyEC2Instance` resource:
+
+```yaml
+MyEIP:
+  Type: "AWS::EC2::EIP"
+  Properties:
+    InstanceId: !Ref MyEC2Instance
+```
+
+No support functions: You can't use any functions in the `Ref` function. You must specify a string that's a resource logical ID.
