@@ -66,6 +66,8 @@ Fn::Cidr:
 - **count**: The number of CIDRs to generate. Valid range is between 1 and 256.
 - **cidrBits**: The number of subnet bits for the CIDR. For eaxmple, specifying a value of "8" for this parameter will create a CIDR with a mask of "/24".
 
+The `Fn::Cidr` function takes three parameters: the base IP address, the number of subnets to generate, and the size of each subnet. It generates a list of CIDR blocks that covers the specified IP address range.
+
 * Subnet bits is the inverse of subnet mask. To calculate the required host bits for a given subnet bits, subtract the subnet bits from 32 for IPv4 or 128 for IPv6.
 
 **Return Value**
@@ -77,6 +79,18 @@ This example creates 6 CIDRs with a subnet mask "/27" inside from a CIDR with a 
 ```yaml
 !Cidr [ "192.168.0.0/24", 6, 5 ]
 ```
+
+In this example, the `!Cidr` function generates a list of two CIDR blocks that cover the IP address range 10.0.0.0/16. The second parameter, 2, specifies that two subnets should be generated, and the third parameter, 8, specifies that each subnet should have a size of 256 IP addresses (2^8).
+```yaml
+Subnets:
+  !Cidr [ "10.0.0.0/16", 2, 8 ]
+```
+
+The resulting list of CIDR blocks might look like this:
+```yaml
+[  "10.0.0.0/24",  "10.0.1.0/24"]
+```
+This list of CIDR blocks could be used to create two subnets in a VPC, each with 256 IP addresses.
 
 **Creating an IPv6 enabled VPC**
 This example template creates an IPv6 enabled subnet.
@@ -101,6 +115,9 @@ Resources:
             Ipv6CidrBlock: !Select [ 0, !Cidr [ !Select [ 0, !GetAtt ExampleVpc.Ipv6CidrBlocks], 1, 64 ]]
             VpcId: !Ref ExampleVpc
 ```
+
+A CIDR block is a way of specifying a range of IP addresses. It consists of an IP address and a network mask that specifies the number of bits in the address that are used to identify the network. CIDR notation is often used to specify the IP address ranges used by subnets in a VPC.
+
 
 
 
