@@ -49,6 +49,27 @@ UserData:
 
 In this example, the !Base64 function encodes the Bash script as a Base64-encoded string. This string can be passed to an EC2 instance as user data to run the script on the instance.
 
+### Fn::Cidr
+* The intrinsic function `Fn::Cidr` returns an array of CIDR address blocks. The number of CIDR blocks returned is dependent on the `count` parameter.
+
+```yaml
+Fn::Cidr:
+  - ipBlock
+  - count
+  - cidrBits
+  
+!Cidr [ipBlock, count, cidrBits]
+```
+
+**Parameters**
+- **ipBlock**: The user-specified CIDR address block to be split into smaller address blocks.
+- **count**: The number of CIDRs to generate. Valid range is between 1 and 256.
+- **cidrBits**: The number of subnet bits for the CIDR. For eaxmple, specifying a value of "8" for this parameter will create a CIDR with a mask of "/24".
+
+* Subnet bits is the inverse of subnet mask. To calculate the required host bits for a given subnet bits, subtract the subnet bits from 32 for IPv4 or 128 for IPv6.
+
+**Return Value**
+An array of CIDR address blocks
 
 
 
