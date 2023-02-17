@@ -571,3 +571,29 @@ To write a dollar sign and curly braces (`${}`) literally, add an exclamation po
 CloudFormation returns the original string, substituting the values for all the variables.
 
 The following examples demonstrate how to use the `Fn::Sub` function.
+
+**Fn::Sub with a Mapping**  
+
+The following example uses a mapping to substitute the `${Domain}` variable with the resulting value from the `Ref` function.
+
+```yaml
+Name: !Sub 
+  - 'www.${Domain}'
+  - Domain: !Ref RootDomainName
+```
+
+**Fn::Sub without a Mapping**  
+
+The following example uses `Fn::Sub` with the `AWS::Region` and `AWS::AccountId` pseudo parameters and the `vpc` resource logical ID to create an Amazon Resource Name (ARN) for a VPC
+
+The YAML example uses a literal block to specify the user data script.
+
+```yaml
+UserData:
+  Fn::Base64:
+    !Sub |
+      #!/bin/bash -xe
+      yum update -y aws-cfn-bootstrap
+      /opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --resource LaunchConfig --configsets wordpress_install --region ${AWS::Region}
+      /opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --resource WebServerGroup --region ${AWS::Region}
+```
