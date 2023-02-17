@@ -257,6 +257,49 @@ For these examples, CloudFormation evaluates `Fn::GetAZs` to the following array
 
 `[ "us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d" ]`
 
+```yaml
+Fn::GetAZs: ""
+Fn::GetAZs:
+  Ref: "AWS::Region"
+Fn::GetAZs: us-east-1
+```
+
+The following example uses `Fn::GetAZs` to specify a subnet's Availability Zone:
+
+```yaml
+mySubnet: 
+  Type: "AWS::EC2::Subnet"
+  Properties: 
+    VpcId: 
+      !Ref VPC
+    CidrBlock: 10.0.0.0/24
+    AvailabilityZone: 
+      Fn::Select: 
+        - 0
+        - Fn::GetAZs: ""
+```
+
+**Nested Functions with Short Form YAML**  
+
+The following examples show valid patterns for using nested intrinsic functions using short form YAML. You cannot nest short form functions consecutively, so a pattern like !GetAZs !Ref is not valid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
