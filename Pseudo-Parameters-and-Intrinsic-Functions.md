@@ -184,9 +184,56 @@ Resources:
       InstanceType: m1.small
 ```
 
+### Fn::GetAtt
+The `Fn::GetAtt` intrinsic function returns the value of an attribute from a resource in the template. 
+* This function allows you to retrieve specific pieces of information about a resource in your CloudFormation stack, such as its IP address, domain name, or other properties
 
+```yaml
+Fn::GetAtt: [ logicalNameOfResource, attributeName ]
 
+!GetAtt logicalNameOfResource.attributeName
+```
 
+**Parameters**  
+- **logicalNameOfResource**: The logical name (also called logical ID) of the resource that contains the attribute that you want.
+- **attributeName**: The name of the resource-specific attribute whose value you want. 
+
+**Return Value**  
+The attribute value.
+
+### Example
+
+This example snippet returns a string containing the DNS name of the load balancer with the logical name `myELB`.
+
+```yaml
+!GetAtt myELB.DNSName
+```
+
+The following example template returns the `SourceSecurityGroup.OwnerAlias` and `SourceSecurityGroup.GroupName` of the load balancer with the logical name `myELB`.
+
+```yaml
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  myELB:
+    Type: AWS::ElasticLoadBalancing::LoadBalancer
+    Properties:
+      AvailabilityZones:
+        - eu-west-1a
+      Listeners:
+        - LoadBalancerPort: '80'
+          InstancePort: '80'
+          Protocol: HTTP
+  myELBIngressGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: ELB ingress group
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          SourceSecurityGroupOwnerId: !GetAtt myELB.SourceSecurityGroup.OwnerAlias
+          SourceSecurityGroupName: !GetAtt myELB.SourceSecurityGroup.GroupName         
+```
 
 
 
