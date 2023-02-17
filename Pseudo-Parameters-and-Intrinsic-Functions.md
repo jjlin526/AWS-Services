@@ -597,3 +597,42 @@ UserData:
       /opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --resource LaunchConfig --configsets wordpress_install --region ${AWS::Region}
       /opt/aws/bin/cfn-signal -e $? --stack ${AWS::StackName} --resource WebServerGroup --region ${AWS::Region}
 ```
+
+### Fn::ToJsonString
+The `Fn::ToJsonString` intrinsic function converts an object or array to its corresponding JSON string.
+
+```yaml
+Fn::ToJsonString: Object
+
+Fn::ToJsonString: Array
+```
+
+### Example
+
+This example snippet converts the object passed to the intrinsic function to a JSON string.
+
+```yaml
+Transform: 'AWS::LanguageExtensions'
+#...
+  Fn::ToJsonString: 
+    key1: value1
+    key2: !Ref ParameterName
+#...
+```
+
+In both of these examples, if the `Ref` to `ParameterName` resolves to `resolvedValue`, the function resolves to the following JSON string:
+
+```json
+"{\"key1\":\"value1\"},{\"key2\":\"resolvedValue\"}"
+```
+
+This example snippet converts the array passed to the intrinsic function to a JSON string.
+
+```yaml
+Transform: 'AWS::LanguageExtensions'
+#...
+  Fn::ToJsonString: 
+    - key1: value1
+      key2: !Ref ParameterName
+#...
+```
