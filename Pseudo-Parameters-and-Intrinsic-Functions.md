@@ -636,3 +636,46 @@ Transform: 'AWS::LanguageExtensions'
       key2: !Ref ParameterName
 #...
 ```
+
+### Fn::Transform
+
+The intrinsic function `Fn::Transform` specifies a **macro** to perform **custom processing** on part of a stack template. Macros enable you to perform custom processing on templates, from simple actions like find-and-replace operations to extensive transformations of entire templates. 
+
+You can also use `Fn::Transform` to call the `AWS::Include transform` transform, which is a macro hosted by AWS CloudFormation.
+
+```yaml
+Fn::Transform:
+  Name : macro name
+  Parameters :
+    Key : value
+    
+Transform:
+  Name: macro name
+  Parameters:
+    Key: value
+```
+
+### Examples
+
+The following example calls the `AWS::Include` transform, specifying that the location to retrieve a template snippet from is passed in the `InputValue` parameter.
+
+```yaml
+'Fn::Transform':
+  Name: 'AWS::Include'
+  Parameters:
+    Location: !Ref InputValue
+```
+
+The following example calls the `AWS::Include` transform, specifying that the location to retrieve a template snippet from is located in the `RegionMap` mapping, under the key `us-east-1` and nested key `s3Location`.
+
+```yaml
+!Transform
+Name: AWS::Include
+Parameters:
+  Location: !FindInMap
+    - RegionMap
+    - us-east-1
+    - s3Location
+```
+
+No support functions. CloudFormation passes any intrinsic function calls included in `Fn::Transform` to the specified macro as literal strings. 
