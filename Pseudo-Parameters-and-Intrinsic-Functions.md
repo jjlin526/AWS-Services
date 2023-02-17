@@ -142,11 +142,18 @@ You cannot nest two instances of two functions in short form.
 **Return Value**  
 The value that is assigned to `SecondLevelKey`.
 
+### Example
+The following example shows how to use `Fn::FindInMap` for a template with a `Mappings` section that contains a single map, `RegionMap`, that associates AMIs with AWS Regions.
 
+* The map has 5 top-level keys that correspond to various AWS Regions.
+* Each top-level key is assigned a list with two second level keys, `"HVM64"` and `"HVMG2"`, that correspond to the AMI's architecture.
+* Each of the second-level keys is assigned an appropriate AMI name.
 
+The example template contains an `AWS::EC2::Instance` resource whose `ImageId` property is set by the `FindInMap` function.
 
+`MapName` is set to the map of interest, `"RegionMap"` in this example. `TopLevelKey` is set to the region where the stack is created, which is determined by using the `"AWS::Region"` pseudo parameter. `SecondLevelKey` is set to the desired architecture, `"HVM64"` for this example.
 
-
+`FindInMap` returns the AMI assigned to `FindInMap`. For a `HVM64` instance in `us-east-1`, FindInMap would return `"ami-0ff8a91507f77f867"`.
 
 
 
