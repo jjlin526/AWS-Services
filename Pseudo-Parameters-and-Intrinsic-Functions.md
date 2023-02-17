@@ -517,5 +517,20 @@ Fn::Split: [ delimiter, source string ]
 
 ### Examples
 
+The following example splits a string at each vertical bar (`|`). The function returns `["a", "b", "c"]`
 
+```yaml
+!Split [ "|" , "a|b|c" ]
+```
 
+If you split a string with consecutive delimiters, the resulting list will include an empty string. The following example shows how a string with two consecutive delimiters and an appended delimiter is split. The function returns `["a", "", "c", ""]`.
+
+```yaml
+!Split [ "|" , "a||c|" ]
+```
+
+The following example splits an imported output value, and then selects the third element from the resulting list of subnet IDs, as specified by the `Fn::Select` function.
+
+```yaml
+!Select [2, !Split [",", !ImportValue AccountSubnetIDs]]
+```
