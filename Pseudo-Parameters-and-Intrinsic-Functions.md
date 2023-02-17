@@ -379,14 +379,34 @@ Fn::ImportValue:
 **Return Value**  
 The stack output value.
 
+### Fn::Join
+The intrinsic function `Fn::Join` appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter.
 
+```yaml
+Fn::Join: [ delimiter, [ comma-delimited list of values ] ]
 
+!Join [ delimiter, [ comma-delimited list of values ] ]
+```
 
+**Parameters**  
+- **delimiter**: The value you want to occur between fragments. The delimiter will occur between fragments only. It won't terminate the final value.
+- **ListOfValues**: The list of values you want combined.
 
+### Examples
 
+```yaml
+!Join [ ":", [ a, b, c ] ]
+```
 
+The following example uses `Fn::Join` to construct a string value. It uses the `Ref` function with the `AWS::Partition` parameter and the `AWS::AccountId` pseudo parameter.
 
-
-
+```yaml
+!Join
+  - ''
+  - - 'arn:'
+    - !Ref AWS::Partition
+    - ':s3:::elasticbeanstalk-*-'
+    - !Ref AWS::AccountId
+```
 
 
