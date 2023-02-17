@@ -502,3 +502,20 @@ AvailabilityZone: !Select
   - 0
   - Fn::GetAZs: !Ref 'AWS::Region'
 ```
+
+### Fn::Split
+
+To split a string into a list of string values so that you can select an element from the resulting string list, use the `Fn::Split` intrinsic function. Specify the location of splits with a delimiter, such as `,` (a comma). After you split a string, use the `Fn::Select` function to pick a specific element.
+
+For example, if a comma-delimited string of subnet IDs is imported to your stack template, you can split the string at each comma. From the list of subnet IDs, use the `Fn::Select` intrinsic function to specify a subnet ID for a resource.
+
+```yaml
+Fn::Split: [ delimiter, source string ]
+
+!Split [ delimiter, source string ]
+```
+
+### Examples
+
+
+
