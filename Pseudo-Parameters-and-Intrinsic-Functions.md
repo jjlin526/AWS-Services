@@ -373,6 +373,11 @@ Fn::ImportValue:
   !Sub "${NetworkStack}-SubnetID"
 ```
 
+**Parameters**  
+- **sharedValueToImport**: The stack output value that you want to import
+
+**Return Value**  
+The stack output value.
 
 
 
