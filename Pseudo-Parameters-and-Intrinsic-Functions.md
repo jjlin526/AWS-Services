@@ -309,8 +309,33 @@ The following restrictions apply to cross-stack references:
 * You can't delete a stack if another stack references one of its outputs.
 * You can't modify or remove an output value that is referenced by another stack.
 
+**Stack A Export**  
 
+```yaml
+Outputs:
+  PublicSubnet:
+    Description: The subnet ID to use for public web servers
+    Value:
+      Ref: PublicSubnet
+    Export:
+      Name:
+        'Fn::Sub': '${AWS::StackName}-SubnetID'
+  WebServerSecurityGroup:
+    Description: The security group ID to use for public web servers
+    Value:
+      'Fn::GetAtt':
+        - WebServerSecurityGroup
+        - GroupId
+    Export:
+      Name:
+        'Fn::Sub': '${AWS::StackName}-SecurityGroupID'
+```
 
+**Stack B Import**  
+
+```yaml
+
+```
 
 
 
