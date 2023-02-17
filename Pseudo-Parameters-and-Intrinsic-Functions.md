@@ -71,6 +71,36 @@ Fn::Cidr:
 **Return Value**
 An array of CIDR address blocks
 
+**Example**
+This example creates 6 CIDRs with a subnet mask "/27" inside from a CIDR with a mask of "/24".
+
+```yaml
+!Cidr [ "192.168.0.0/24", 6, 5 ]
+```
+
+**Creating an IPv6 enabled VPC**
+This example template creates an IPv6 enabled subnet.
+
+```yaml
+Resources:
+    ExampleVpc:
+        Type: AWS::EC2::VPC
+        Properties:
+            CidrBlock: "10.0.0.0/16"
+     IPv6CidrBlock:
+        Type: AWS::EC2::VPCCidrBlock
+        Properties:
+            AmazonProvidedIpv6CidrBlock: true
+            VpcId: !Ref ExampleVpc
+     ExampleSubnet:
+        Type: AWS::EC2::Subnet
+        DependsOn: IPv6CidrBlock
+        Properties:
+            AssignIpv6AddressOnCreation: true
+            CidrBlock: !Select [ 0, !Cidr [ !GetAtt ExampleVpc.CidrBlock, 1, 8 ]]
+            Ipv6CidrBlock: !Select [ 0, !Cidr [ !Select [ 0, !GetAtt ExampleVpc.Ipv6CidrBlocks], 1, 64 ]]
+            VpcId: !Ref ExampleVpc
+```
 
 
 
