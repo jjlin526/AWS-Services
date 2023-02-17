@@ -13,6 +13,7 @@ Both pseudo parameters and intrinsic functions can be used together to dynamical
 
 ### Fn::Base64
 * The intrinsic function `Fn::Base64` returns the Base64 representation of the input string. This function is typically used to pass encoded data to Amazon EC2 instances by way of the `UserData` property.
+* Base64 is a way to represent binary data as a string of ASCII characters. It is often used to transmit binary data over protocols that are designed to handle only ASCII characters, such as email or HTTP.
 
 ```yaml
 Fn::Base64: valueToEncode
@@ -37,7 +38,16 @@ Fn::Base64:
   !Sub string
 ```
 
+For example, you may use `Fn::Base64` to encode a shell script that is passed to an EC2 instance as user data.
 
+```yaml
+UserData:
+  !Base64 |
+    #!/bin/bash
+    echo "Hello, World!"
+```
+
+In this example, the !Base64 function encodes the Bash script as a Base64-encoded string. This string can be passed to an EC2 instance as user data to run the script on the instance.
 
 
 
