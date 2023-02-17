@@ -334,9 +334,44 @@ Outputs:
 **Stack B Import**  
 
 ```yaml
-
+Resources:
+  WebServerInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-a1b23456
+      NetworkInterfaces:
+        - GroupSet:
+            - Fn::ImportValue: 
+              'Fn::Sub': '${NetworkStackNameParameter}-SecurityGroupID'
+          AssociatePublicIpAddress: 'true'
+          DeviceIndex: '0'
+          DeleteOnTermination: 'true'
+          SubnetId: Fn::ImportValue 
+            'Fn::Sub': '${NetworkStackNameParameter}-SubnetID'
 ```
 
+**Declaration**  
+
+```yaml
+Fn::ImportValue: sharedValueToImport
+
+!ImportValue sharedValueToImport
+```
+
+You can't use the short form of `!ImportValue` when it contains a `!Sub`.
+
+```yaml
+# do not use
+               !ImportValue 
+'Fn::Sub': '${NetworkStack}-SubnetID' 
+```
+
+Instead, you must use the full function name, for example:
+```yaml
+Fn::ImportValue:
+  !Sub "${NetworkStack}-SubnetID"
+```
 
 
 
