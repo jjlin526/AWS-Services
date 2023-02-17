@@ -283,8 +283,18 @@ mySubnet:
 
 The following examples show valid patterns for using nested intrinsic functions using short form YAML. You cannot nest short form functions consecutively, so a pattern like !GetAZs !Ref is not valid.
 
+```yaml
+AvailabilityZone: !Select 
+  - 0
+  - !GetAZs 
+    Ref: 'AWS::Region'
+```
 
-
+```yaml
+AvailabilityZone: !Select 
+  - 0
+  - Fn::GetAZs: !Ref 'AWS::Region'
+```
 
 
 
