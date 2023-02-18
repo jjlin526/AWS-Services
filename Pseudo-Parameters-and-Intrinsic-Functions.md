@@ -772,3 +772,22 @@ MyDB:
       - Ref: AWS::NoValue
 ```
 
+### AWS::Partition
+
+Returns the partition that the resource is in. For standard AWS Regions, the partition is `aws`. For resources in other partitions, the partition is `aws-partitionname`. For example, the partition for resources in the China (Beijing and Ningxia) Region is `aws-cn` and the partition for resources in the AWS GovCloud (US-West) region is `aws-us-gov`.
+
+### AWS::Region
+
+Returns a string representing the Region in which the encompassing resource is being created, such as `us-west-2`.
+
+### AWS::StackId
+
+Returns the ID of the stack as specified with the `aws cloudformation create-stack` command, such as `arn:aws:cloudformation:us-west-2:123456789012:stack/teststack/51af3dc0-da77-11e4-872e-1234567db123`.
+
+### AWS::StackName
+
+Returns the name of the stack as specified with the `aws cloudformation create-stack` command, such as `teststack`.
+
+### AWS::URLSuffix
+
+Returns the suffix for a domain. The suffix is typically `amazonaws.com`, but might differ by Region. For example, the suffix for the China (Beijing) Region is `amazonaws.com.cn`
