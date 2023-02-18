@@ -750,3 +750,25 @@ myASGrpOne:
 Removes the corresponding resource property when specified as a return value in the `Fn::If` intrinsic function.
 
 For example, you can use the `AWS::NoValue` parameter when you want to use a snapshot for an Amazon RDS DB instance only if a snapshot ID is provided. If the `UseDBSnapshot` condition evaluates to true, CloudFormation uses the `DBSnapshotName` parameter value for the `DBSnapshotIdentifier` property. If the condition evaluates to false, CloudFormation removes the `DBSnapshotIdentifier` property.
+
+```yaml
+MyDB:
+  Type: AWS::RDS::DBInstance
+  Properties:
+    AllocatedStorage: '5'
+    DBInstanceClass: db.t2.small
+    Engine: MySQL
+    EngineVersion: '5.5'
+    MasterUsername:
+      Ref: DBUser
+    MasterUserPassword:
+      Ref: DBPassword
+    DBParameterGroupName:
+      Ref: MyRDSParamGroup
+    DBSnapshotIdentifier:
+    Fn::If:
+      - UseDBSnapShot
+      - Ref: DBSnapshotName
+      - Ref: AWS::NoValue
+```
+
